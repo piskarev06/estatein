@@ -1,0 +1,124 @@
+.cta {
+  padding: 100px 0;
+  position: relative;
+
+  border-top: 1px solid var(--Grey-15, #262626);
+  border-bottom: 1px solid var(--Grey-15, #262626);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__block {
+    max-width: 1154px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    color: var(--text-color);
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+
+  &__decor {
+    position: absolute;
+    z-index: -1;
+
+    &--1 {
+      bottom: 0;
+      left: 0;
+
+      & path {
+        &:nth-child(2n + 1) {
+          animation-duration: 4.5s;
+          animation-name: fill-1;
+          animation-iteration-count: infinite;
+        }
+
+        &:nth-child(3n) {
+          animation-duration: 4.5s;
+          animation-name: fill-2;
+          animation-iteration-count: infinite;
+        }
+
+        &:nth-child(2n + 1) {
+          animation-duration: 3s;
+          animation-name: fill-1;
+          animation-iteration-count: infinite;
+        }
+
+        &:nth-child(3n + 1) {
+          animation-duration: 3s;
+          animation-name: fill-2;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+
+    &--2 {
+      bottom: 0;
+      right: 0;
+
+      & path {
+        &:nth-child(2n + 1) {
+          animation-duration: 4.5s;
+          animation-name: fill-1;
+          animation-iteration-count: infinite;
+        }
+
+        &:nth-child(3n + 1) {
+          animation-duration: 4.5s;
+          animation-name: fill-2;
+          animation-iteration-count: infinite;
+        }
+
+        &:nth-child(2n) {
+          animation-duration: 3s;
+          animation-name: fill-1;
+          animation-iteration-count: infinite;
+        }
+
+        &:nth-child(3n) {
+          animation-duration: 3s;
+          animation-name: fill-2;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fill-1 {
+  from {
+    fill: var(--page-bg-lite);
+  }
+
+  50% {
+    fill: var(--page-bg);
+  }
+
+  to {
+    fill: var(--page-bg-lite);
+  }
+}
+
+@keyframes fill-2 {
+  from {
+    fill: var(--page-bg);
+  }
+
+  50% {
+    fill: var(--page-bg-lite);
+  }
+
+  to {
+    fill: var(--page-bg);
+  }
+}

@@ -1,0 +1,86 @@
+.reviews {
+  padding: 75px 0;
+
+  &__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 80px;
+  }
+
+  &__wrapper {
+    max-width: 1200px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__card {
+    padding: 50px;
+
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 12px;
+    border: 1px solid #262626;
+
+    .card {
+      &__top {
+        margin-bottom: 40px;
+      }
+
+      &__stars {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        margin-bottom: 40px;
+      }
+
+      &__title {
+        color: var(--heading-color);
+        font-family: Urbanist;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 150%;
+
+        margin-bottom: 14px;
+      }
+
+      &__text {
+        color: var(--heading-color);
+        font-family: Urbanist;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%;
+      }
+
+      &__person {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      &__name {
+        color: var(--heading-color);
+        font-family: Urbanist;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 150%;
+
+        margin-bottom: 2px;
+      }
+
+      &__location {
+        font-family: Urbanist;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.benefits {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__item {
+    padding: 14px 20px;
+
+    border-radius: 10px;
+    border: 1px solid #262626;
+    background: var(--page-bg-lite);
+  }
+
+  &__title {
+    color: var(--heading-color);
+    font-family: Urbanist;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__text {
+    color: var(--text-color);
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}

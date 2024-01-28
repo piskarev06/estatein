@@ -1,0 +1,26 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+    font-family: var(--font-main);
+}
+
+.swiper-slide {
+    height: auto !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: unset !important;
+    height: unset !important;
+    margin-top: unset !important;
+    display: unset !important;
+    color: unset !important;
+}
+
+.swiper-button-disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}

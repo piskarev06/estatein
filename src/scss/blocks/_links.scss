@@ -1,0 +1,103 @@
+.links {
+  padding: 20px;
+
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  background: var(--page-bg);
+  box-shadow: 0px 0px 0px 10px #191919;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 64px 20px 40px 20px;
+    flex: 1;
+
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: var(--page-bg-lite);
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      border: 1px solid var(--accent);
+
+      & .links__arrow svg path {
+        stroke: var(--heading-color);
+      }
+
+      & .links__arrow svg circle {
+        fill: var(--accent);
+      }
+
+      & .links__circle {
+        animation-play-state: paused;
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+
+    & svg circle,
+    & svg path {
+      transition: all 0.5s ease-out;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 82px;
+    width: 100%;
+  }
+
+  &__circle {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    animation: 5.5s linear 0s normal none infinite running rotationCircle;
+    
+
+    &--sm {
+      animation: 4s linear 0s normal none infinite running rotationCircle;
+    }
+  }
+
+  &__title {
+    color: var(--heading-color);
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+}
+
+@keyframes rotationCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

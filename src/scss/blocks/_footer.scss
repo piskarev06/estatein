@@ -1,0 +1,155 @@
+.footer {
+  &__top {
+    padding: 100px 0;
+    background-color: var(--page-bg);
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+  }
+
+  &__left {
+    max-width: 538px;
+    width: 100%;
+  }
+
+  &__form {
+    position: relative;
+    max-width: 423px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 24px;
+      content: "";
+      background: url("../../img/footer/form/email.svg") no-repeat 0 0;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+    }
+  }
+
+  &__input {
+    padding: 18px 64px 18px 58px;
+    width: 100%;
+
+    color: var(--heading-color);
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: var(--Grey-08, #141414);
+
+    transition: all 0.5s ease-out;
+
+    &:focus {
+      border: 1px solid var(--accent);
+    }
+
+    &::placeholder {
+      font-family: Urbanist;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.108px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 24px;
+  }
+
+  &__right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    & .item__title {
+      font-family: Urbanist;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.12px;
+
+      margin-bottom: 30px;
+    }
+
+    & .list__item {
+      color: var(--heading-color);
+      font-family: Urbanist;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.108px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    & .list__link {
+      position: relative;
+
+      overflow: hidden;
+      transition: color 500ms ease;
+
+      &:hover {
+        color: var(--accent);
+      }
+
+      &::before {
+        position: absolute;
+        content: attr(data-content);
+        top: -1px;
+        left: 0;
+
+        width: 0;
+        white-space: nowrap;
+
+        color: var(--accent);
+        overflow: hidden;
+        transition: width 275ms ease;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 16px 0;
+
+    background-color: var(--page-bg-lite);
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+
+    color: var(--heading-color);
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.108px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & li a img svg {
+      opacity: 0;
+    }
+  }
+
+  // @media (max-width: 1200px) {
+  // 	font-size: 26px;
+  // }
+}
