@@ -18,8 +18,8 @@ export const faqSlider = () => {
       prevEl: ".faq-button-prev",
     },
   });
-};
 
-setCountOfSlides("faq__card", "faq__count");
-addArrowListener("faq__arrow--prev", "faq__currentCount", decrementCount);
-addArrowListener("faq__arrow--next", "faq__currentCount", incrementCount);
+  setCountOfSlides("faq__card", "faq__count");
+  addArrowListener("faq__arrow--prev", "faq__currentCount", decrementCount);
+  addArrowListener("faq__arrow--next", "faq__currentCount", incrementCount);
+};

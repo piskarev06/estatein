@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Urbanist:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    @@include('blocks/header.html')
+
+    <section class="intro">
+      <div class="container">
+        <div class="intro__inner intro__inner--about">
+          <div class="intro__left">
+            <ul class="stars">
+              <li class="stars__item">
+                <img src="../img/stars/1.svg" alt="star" />
+              </li>
+              <li class="stars__item">
+                <img src="../img/stars/2.svg" alt="star" />
+              </li>
+              <li class="stars__item">
+                <img src="../img/stars/3.svg" alt="star" />
+              </li>
+            </ul>
+            <h1 class="intro__title title">Our Journey</h1>
+            <p class="intro__text intro__text--about">
+              Our story is one of continuous growth and evolution. We started as
+              a small team with big dreams, determined to create a real estate
+              platform that transcended the ordinary. Over the years, we've
+              expanded our reach, forged valuable partnerships, and gained the
+              trust of countless clients.
+            </p>
+            <div class="intro__benefits">
+              <ul class="benefits__list">
+                <li class="benefits__item">
+                  <h3 class="benefits__title">200+</h3>
+                  <p class="benefits__text">Happy Customers</p>
+                </li>
+                <li class="benefits__item">
+                  <h3 class="benefits__title">10k+</h3>
+                  <p class="benefits__text">Properties For Clients</p>
+                </li>
+                <li class="benefits__item">
+                  <h3 class="benefits__title">16+</h3>
+                  <p class="benefits__text">Years of Experience</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="intro__img intro__img--about">
+            <img src="../img/about/intro/house.png" alt="house" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('blocks/footer.html')
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

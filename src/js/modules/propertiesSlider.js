@@ -1,4 +1,9 @@
-import { decrementCount, incrementCount, addArrowListener, setCountOfSlides } from "./counterHelpers";
+import {
+  decrementCount,
+  incrementCount,
+  addArrowListener,
+  setCountOfSlides,
+} from "./counterHelpers";
 
 export const propertiesSlider = () => {
   const propertiesSlider = new Swiper(".properties__slider", {
@@ -13,9 +18,16 @@ export const propertiesSlider = () => {
       prevEl: ".properties-button-prev",
     },
   });
+
+  setCountOfSlides("properties__card", "properties__count");
+  addArrowListener(
+    "properties__arrow--prev",
+    "properties__currentCount",
+    decrementCount
+  );
+  addArrowListener(
+    "properties__arrow--next",
+    "properties__currentCount",
+    incrementCount
+  );
 };
-
-setCountOfSlides("properties__card", "properties__count")
-addArrowListener("properties__arrow--prev", 'properties__currentCount', decrementCount)
-addArrowListener("properties__arrow--next", 'properties__currentCount', incrementCount)
-

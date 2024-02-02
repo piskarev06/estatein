@@ -3,7 +3,8 @@ export const decrementCount = (counterId) => {
 };
 
 export const incrementCount = (counterId) => {
-  document.getElementById(counterId).innerText = +document.getElementById(counterId).innerText + 1
+  document.getElementById(counterId).innerText =
+    +document.getElementById(counterId).innerText + 1;
 };
 
 export const addArrowListener = (arrowId, counterId, countAction) => {
@@ -14,6 +15,7 @@ export const addArrowListener = (arrowId, counterId, countAction) => {
 
 export const setCountOfSlides = (slidesClassName, counterClassName) => {
   let countOfSlides = document.getElementsByClassName(slidesClassName).length;
+
   document.getElementsByClassName(counterClassName)[0].lastChild.textContent =
     countOfSlides;
 };

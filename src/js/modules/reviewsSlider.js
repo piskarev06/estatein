@@ -1,4 +1,9 @@
-import { setCountOfSlides, addArrowListener, decrementCount, incrementCount } from "./counterHelpers";
+import {
+  setCountOfSlides,
+  addArrowListener,
+  decrementCount,
+  incrementCount,
+} from "./counterHelpers";
 
 export const reviewsSlider = () => {
   const reviewsSlider = new Swiper(".reviews__slider", {
@@ -13,8 +18,16 @@ export const reviewsSlider = () => {
       prevEl: ".reviews-button-prev",
     },
   });
-};
 
-setCountOfSlides("reviews__card", "reviews__count")
-addArrowListener("reviews__arrow--prev", 'reviews__currentCount', decrementCount)
-addArrowListener("reviews__arrow--next", 'reviews__currentCount', incrementCount)
+  setCountOfSlides("reviews__card", "reviews__count");
+  addArrowListener(
+    "reviews__arrow--prev",
+    "reviews__currentCount",
+    decrementCount
+  );
+  addArrowListener(
+    "reviews__arrow--next",
+    "reviews__currentCount",
+    incrementCount
+  );
+};
