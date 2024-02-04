@@ -1,0 +1,43 @@
+.achievements {
+  padding: 75px 0;
+
+  &__top {
+    position: relative;
+    max-width: 1297px;
+
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__item {
+    padding: 50px;
+    flex: 1;
+    align-self: stretch;
+
+    border: 1px solid #262626;
+    border-radius: 12px;
+    box-shadow: 0 0 0 8px #191919;
+
+    & .item {
+      &__title {
+        color: var(--heading-color);
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 150%;
+
+        margin-bottom: 30px;
+      }
+
+    }
+  }
+}
