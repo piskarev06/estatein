@@ -1,0 +1,104 @@
+.steps {
+  padding: 75px 0;
+
+  &__top {
+    max-width: 1300px;
+    position: relative;
+
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+  }
+
+  &__item {
+    min-width: 500px;
+    flex: 1;
+    align-self: stretch;
+  }
+
+  &__marker {
+    display: inline-block;
+    padding: 16px 0 20px 16px;
+
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+
+    border-left: 1px solid #262626;
+  }
+
+  &__content {
+    position: relative;
+    height: calc(100% - 66px);
+    padding: 50px;
+    border: 1px solid #262626;
+    border-radius: 0 12px 12px 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: calc(var(--mouse-x) - 150px)
+      calc(var(--mouse-y) - 150px);
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    background-image: radial-gradient(
+      circle,
+      var(--accent),
+      transparent calc(69.5% + 1px)
+    );
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: -66px;
+      left: -1px;
+      width: 1px;
+      height: 250px;
+      z-index: 1;
+      background: linear-gradient(rgba(112, 59, 247, 1), rgba(112, 59, 247, 0));
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: -100px;
+      left: 99px;
+      transform: rotate(270deg);
+      width: 1px;
+      height: 200px;
+      z-index: 1;
+      background: linear-gradient(rgba(112, 59, 247, 1), rgba(112, 59, 247, 0));
+    }
+
+    & .content {
+      &__title {
+        color: var(--heading-color);
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 150%;
+
+        margin-bottom: 20px;
+      }
+
+      &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+      }
+    }
+  }
+}
