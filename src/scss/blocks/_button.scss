@@ -31,4 +31,22 @@
       background-position: left;
     }
   }
+
+  &--search {
+    position: relative;
+    padding-left: 56px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 24px;
+      content: '';
+      background: url('../../img/pages/properties/search-icon.svg') no-repeat 0
+        0;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+    }
+  }
 }
