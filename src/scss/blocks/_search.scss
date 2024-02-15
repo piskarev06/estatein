@@ -4,6 +4,8 @@
   &__top {
     position: relative;
     text-align: center;
+
+    margin-bottom: 10px;
   }
 
   &__input {
@@ -21,6 +23,15 @@
     background: var(--page-bg);
     border-radius: 12px 12px 0 0;
     border: 1px solid #262626;
+    transition: all 0.5s ease-out;
+
+    &::placeholder {
+      color: #666;
+    }
+
+    &:focus {
+      border-color: var(--accent);
+    }
   }
 
   &__button {
@@ -28,5 +39,111 @@
     top: 50%;
     transform: translateY(-50%);
     right: calc(((100% - 1322px) / 2) + 20px);
+  }
+
+  &__bottom {
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 12px;
+    background: var(--page-bg-lite);
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 20px;
+      content: '';
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      pointer-events: none;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 54px;
+      content: '';
+      width: 1px;
+      height: 27px;
+      display: inline-block;
+      pointer-events: none;
+
+      background: #262626;
+    }
+
+    &--1::before {
+      background: url('../../img/pages/properties/search/icons/01.svg')
+        no-repeat 0 0;
+    }
+
+    &--2::before {
+      background: url('../../img/pages/properties/search/icons/02.svg')
+        no-repeat 0 0;
+    }
+
+    &--3::before {
+      background: url('../../img/pages/properties/search/icons/03.svg')
+        no-repeat 0 0;
+    }
+
+    &--4::before {
+      background: url('../../img/pages/properties/search/icons/04.svg')
+        no-repeat 0 0;
+    }
+
+    &--5::before {
+      background: url('../../img/pages/properties/search/icons/05.svg')
+        no-repeat 0 0;
+    }
+  }
+
+  &__appearance {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+
+    transition: all 0.5s ease-out;
+  }
+
+  &__select {
+    padding: 20px 20px 20px 64px;
+    width: 100%;
+
+    cursor: pointer;
+    appearance: none;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+
+    border: 1px solid #262626;
+    border-radius: 12px;
+    background: var(--page-bg);
+    transition: all 0.5s ease-out;
+
+    &:focus {
+      border-color: var(--accent);
+
+      & + .search__appearance {
+        transform: rotate(180deg) translateY(50%);
+      }
+    }
+
+    &--white {
+      color: var(--heading-color);
+    }
   }
 }
