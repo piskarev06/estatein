@@ -22,6 +22,10 @@
       border-color: var(--accent);
 
       & + .select__appearance {
+        transform: rotate(180deg) translateY(50%);
+      }
+
+      & + .select__appearance--happen {
         transform: rotate(180deg);
       }
     }
