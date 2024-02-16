@@ -1,0 +1,49 @@
+.select {
+  position: relative;
+  width: 100%;
+
+  &__tag {
+    padding: 20px 20px 20px 64px;
+    width: 100%;
+
+    cursor: pointer;
+    appearance: none;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+
+    border: 1px solid #262626;
+    border-radius: 12px;
+    background: var(--page-bg);
+    transition: all 0.5s ease-out;
+
+    &:focus {
+      border-color: var(--accent);
+
+      & + .select__appearance {
+        transform: rotate(180deg);
+      }
+    }
+
+    &--white {
+      color: var(--heading-color) !important;
+    }
+  }
+
+  &__appearance {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+
+    transition: all 0.5s ease-out;
+
+    &--happen {
+      top: unset;
+      transform: unset;
+      bottom: 22px;
+    }
+  }
+}

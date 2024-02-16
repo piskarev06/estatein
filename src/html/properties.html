@@ -878,6 +878,199 @@
       </div>
     </section>
 
+    <section class="happen">
+      <div class="container">
+        <div class="happen__inner">
+          <div class="happen__top">
+            <ul class="stars">
+              <li class="stars__item">
+                <img src="../img/stars/1.svg" alt="star" />
+              </li>
+              <li class="stars__item">
+                <img src="../img/stars/2.svg" alt="star" />
+              </li>
+              <li class="stars__item">
+                <img src="../img/stars/3.svg" alt="star" />
+              </li>
+            </ul>
+
+            <h2 class="happen__title title">Let's Make it Happen</h2>
+            <p class="happen__text text">
+              Ready to take the first step toward your dream property? Fill out
+              the form below, and our real estate wizards will work their magic
+              to find your perfect match. Don't wait; let's embark on this
+              exciting journey together.
+            </p>
+          </div>
+
+          <form action="/" class="happen__form">
+            <ul class="form__line">
+              <li class="form__item">
+                <label class="form__label" for="fname">First Name</label>
+                <input
+                  class="form__input"
+                  placeholder="Enter First Name"
+                  type="text"
+                  id="fname"
+                  name="fname"
+                />
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="lname">Last Name</label>
+                <input
+                  class="form__input"
+                  placeholder="Enter Last Name"
+                  type="text"
+                  id="lname"
+                  name="lname"
+                />
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="email">Email</label>
+                <input
+                  class="form__input"
+                  placeholder="Enter your Email"
+                  type="email"
+                  id="email"
+                  name="email"
+                />
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="tel">Phone</label>
+                <input
+                  placeholder="Enter Phone Number"
+                  class="form__input"
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                />
+              </li>
+            </ul>
+            <ul class="form__line">
+              <li class="form__item select">
+                <label for="location" class="form__label"
+                  >Preferred Location</label
+                >
+                <select
+                  id="location"
+                  name="location"
+                  class="form__select select__tag"
+                  onchange="this.className='form__select select__tag select__tag--white'"
+                >
+                  <option selected disabled>Select Location</option>
+                  <option>New-York</option>
+                  <option>Los Angeles</option>
+                  <option>Chicago</option>
+                </select>
+                <div class="select__appearance select__appearance--happen">
+                  <img
+                    src="../img/pages/properties/happen/button.svg"
+                    alt="button"
+                  />
+                </div>
+              </li>
+              <li class="form__item select">
+                <label for="property" class="form__label">Property Type</label>
+                <select
+                  onchange="this.className='form__select select__tag select__tag--white'"
+                  id="property"
+                  name="property"
+                  class="form__select select__tag"
+                  onchange="this.className='search__select search__select--white'"
+                >
+                  <option selected disabled>Select Property Type</option>
+                  <option>Villa</option>
+                  <option>Cottage</option>
+                  <option>Skyscraper</option>
+                </select>
+                <div class="select__appearance select__appearance--happen">
+                  <img
+                    src="../img/pages/properties/happen/button.svg"
+                    alt="button"
+                  />
+                </div>
+              </li>
+              <li class="form__item select">
+                <label for="bathrooms" class="form__label"
+                  >No. of Bathrooms</label
+                >
+                <select
+                  onchange="this.className='form__select select__tag select__tag--white'"
+                  id="bathrooms"
+                  name="bathrooms"
+                  class="form__select select__tag"
+                  onchange="this.className='search__select search__select--white'"
+                >
+                  <option selected disabled>Select no. of Bathrooms</option>
+                  <option>1 – 2</option>
+                  <option>2 – 3</option>
+                  <option>3+</option>
+                </select>
+                <div class="select__appearance select__appearance--happen">
+                  <img
+                    src="../img/pages/properties/happen/button.svg"
+                    alt="button"
+                  />
+                </div>
+              </li>
+              <li class="form__item select">
+                <label for="location" class="form__label"
+                  >No. of Bedrooms</label
+                >
+                <select
+                  onchange="this.className='form__select select__tag select__tag--white'"
+                  id="location"
+                  name="location"
+                  class="form__select select__tag"
+                  onchange="this.className='search__select search__select--white'"
+                >
+                  <option selected disabled>Select no. of Bedrooms</option>
+                  <option>1 – 2</option>
+                  <option>2 – 3</option>
+                  <option>3+</option>
+                </select>
+                <div class="select__appearance select__appearance--happen">
+                  <img
+                    src="../img/pages/properties/happen/button.svg"
+                    alt="button"
+                  />
+                </div>
+              </li>
+            </ul>
+            <ul class="form__line">
+              <li class="form__item">
+                <label class="form__label" for="message">Message</label>
+                <textarea
+                  class="form__textarea"
+                  placeholder="Enter your Message here.."
+                  name="message"
+                  id="message"
+                ></textarea>
+              </li>
+            </ul>
+            <div class="form__line form__bottom">
+              <div class="form__terms">
+                <input
+                  required
+                  class="form__checkbox"
+                  type="checkbox"
+                  name="terms"
+                  id="terms"
+                /><label for="terms" class="form__subtitle"
+                  >I agree with
+                  <a href="/" class="form__link">Terms of Use</a> and
+                  <a href="/" class="form__link">Privacy Policy</a></label
+                >
+              </div>
+              <button class="button button--accent form__bottom" type="submit">
+                Send Your Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <section class="cta">
       <div class="container">
         <div class="cta__inner">

@@ -10,7 +10,8 @@ body {
 }
 
 select:focus,
-option:focus {
+option:focus,
+textarea:focus {
   outline: none;
   box-shadow: none;
 }
