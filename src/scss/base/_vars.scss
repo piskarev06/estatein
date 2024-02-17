@@ -1,24 +1,19 @@
 :root {
-	--container-width: 1596px;
-	--container-padding: 15px;
+  --container-width: 1596px;
+  --container-padding: 15px;
 
-	--font-main: 'Urbanist', sans-serif;
-	--font-accent: 'Inter', serif;
+  --font-main: 'Urbanist', sans-serif;
+  --font-accent: 'Inter', serif;
 
-	--page-bg: #141414;
-	--page-bg-lite: #1A1A1A;
-	--heading-color: #fff;
-	--text-color: #999;
-	--accent: #703BF7;
+  --page-bg: #141414;
+  --page-bg-lite: #1a1a1a;
+  --heading-color: #fff;
+  --text-color: #999;
+  --accent: #703bf7;
 
-	--rotation: 0;
+  --rotation: 0;
 
-    --laptop-size: 1280px;
-	--tablet-size: 959px;
-	--mobile-size: 358px;
-}
-
-.dark {
-    --page-bg: #252526;
-    --text-color: #fff;
+  --laptop-size: 1280px;
+  --tablet-size: 959px;
+  --mobile-size: 358px;
 }
