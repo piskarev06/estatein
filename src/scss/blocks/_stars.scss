@@ -9,15 +9,29 @@
 
   &__item:first-child {
     transform: rotate(calc(0.3deg * var(--rotation)));
+
+    & img {
+      width: 30px;
+      height: 30px;
+    }
   }
 
   &__item:nth-child(2) {
     transform: rotate(calc(0.6deg * var(--rotation)));
+
+    & img {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &__item:last-child {
+    transform: rotate(calc(1deg * var(--rotation)));
     height: 10px;
 
-    transform: rotate(calc(1deg * var(--rotation)));
+    & img {
+      width: 10px;
+      height: 10px;
+    }
   }
 }
