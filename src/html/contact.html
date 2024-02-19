@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Properties Page</title>
+    <title>Contact Page</title>
     <link rel="stylesheet" href="./css/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,861 +27,590 @@
       <div class="container">
         <div class="intro__inner intro__inner--properties">
           <div class="intro__left">
-            <h1 class="intro__title title">Find Your Dream Property</h1>
+            <h1 class="intro__title title">Get in Touch with Estatein</h1>
             <p class="intro__text intro__text--properties">
-              Welcome to Estatein, where your dream property awaits in every
-              corner of our beautiful world. Explore our curated selection of
-              properties, each offering a unique story and a chance to redefine
-              your life. With categories to suit every dreamer, your journey
+              Welcome to Estatein's Contact Us page. We're here to assist you
+              with any inquiries, requests, or feedback you may have. Whether
+              you're looking to buy or sell a property, explore investment
+              opportunities, or simply want to connect, we're just a message
+              away. Reach out to us, and let's start a conversation.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="search">
-      <div class="container">
-        <div class="search__inner">
-          <div class="search__top">
-            <input
-              placeholder="Search For A Property"
-              type="text"
-              class="search__input"
-            />
-            <button
-              type="submit"
-              class="search__button button button--accent button--search"
-            >
-              Find Property
-            </button>
-          </div>
-          <ul class="search__bottom">
-            <li class="search__item search__item--1 select">
-              <select
-                class="select__tag"
-                onchange="this.className='select__tag select__tag--white'"
-              >
-                <option selected disabled>Location</option>
-                <option>New-York</option>
-                <option>Los Angeles</option>
-                <option>Chicago</option>
-              </select>
-              <div class="select__appearance">
-                <img
-                  src="../img/pages/properties/search/button.svg"
-                  alt="button"
-                />
-              </div>
-            </li>
-            <li class="search__item search__item--2 select">
-              <select
-                class="select__tag"
-                onchange="this.className='select__tag select__tag--white'"
-              >
-                <option selected disabled>Property Type</option>
-                <option>Villa</option>
-                <option>Cottage</option>
-                <option>Skyscraper</option>
-              </select>
-              <div class="select__appearance">
-                <img
-                  src="../img/pages/properties/search/button.svg"
-                  alt="button"
-                />
-              </div>
-            </li>
-            <li class="search__item search__item--3 select">
-              <select
-                class="select__tag"
-                onchange="this.className='select__tag select__tag--white'"
-              >
-                <option selected disabled>Pricing Range</option>
-                <option>$250,000 – $300,000</option>
-                <option>$300,000 – $350,000</option>
-                <option>$350,000 – $400,000</option>
-                <option>$400,000 – $500,000</option>
-                <option>$500,000+</option>
-              </select>
-              <div class="select__appearance">
-                <img
-                  src="../img/pages/properties/search/button.svg"
-                  alt="button"
-                />
-              </div>
-            </li>
-            <li class="search__item search__item--4 select">
-              <select
-                class="select__tag"
-                onchange="this.className='select__tag select__tag--white'"
-              >
-                <option selected disabled>Property Size</option>
-                <option>⏍400 – ⏍600</option>
-                <option>⏍600 – ⏍800</option>
-                <option>⏍800 - ⏍1000</option>
-                <option>⏍1000+</option>
-              </select>
-              <div class="select__appearance">
-                <img
-                  src="../img/pages/properties/search/button.svg"
-                  alt="button"
-                />
-              </div>
-            </li>
-            <li class="search__item search__item--5 select">
-              <select
-                class="select__tag"
-                onchange="this.className='select__tag select__tag--white'"
-              >
-                <option selected disabled>Build Year</option>
-                <option>2020 – 2021</option>
-                <option>2021 – 2022</option>
-                <option>2022 – 2023</option>
-                <option>2023 – 2024</option>
-                <option>2024+</option>
-              </select>
-              <div class="select__appearance">
-                <img
-                  src="../img/pages/properties/search/button.svg"
-                  alt="button"
-                />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="properties">
-      <div class="container">
-        <div class="properties__inner">
-          <div class="properties__top">
-            <ul class="stars">
-              <li class="stars__item">
-                <img src="../img/stars/1.svg" alt="star" />
-              </li>
-              <li class="stars__item">
-                <img src="../img/stars/2.svg" alt="star" />
-              </li>
-              <li class="stars__item">
-                <img src="../img/stars/3.svg" alt="star" />
-              </li>
-            </ul>
-            <div class="properties__wrapper properties__wrapper--properties">
-              <h2 class="properties__title title">
-                Discover a World of Possibilities
-              </h2>
-              <p class="properties__text text">
-                Our portfolio of properties is as diverse as your dreams.
-                Explore the following categories to find the perfect property
-                that resonates with your vision of home
-              </p>
-            </div>
-            <a href="/" class="properties__button button"
-              >View All Properties</a
-            >
-          </div>
-
-          <div class="properties__slider swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/1.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Seaside Serenity Villa</h3>
-                  <p class="card__text">
-                    A stunning 4-bedroom, 3-bathroom villa in a peaceful
-                    suburban neighborhood...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">4-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$550,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/2.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Metropolitan Haven</h3>
-                  <p class="card__text">
-                    A chic and fully-furnished 2-bedroom apartment with
-                    panoramic city views...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">2-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">2-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$500,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/1.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Rustic Retreat Cottage</h3>
-                  <p class="card__text">
-                    An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
-                    community...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$550,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/1.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Seaside Serenity Villa</h3>
-                  <p class="card__text">
-                    A stunning 4-bedroom, 3-bathroom villa in a peaceful
-                    suburban neighborhood...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">4-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$550,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/2.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Metropolitan Haven</h3>
-                  <p class="card__text">
-                    A chic and fully-furnished 2-bedroom apartment with
-                    panoramic city views...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">2-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">2-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$500,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/1.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Rustic Retreat Cottage</h3>
-                  <p class="card__text">
-                    An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
-                    community...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$550,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/1.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Seaside Serenity Villa</h3>
-                  <p class="card__text">
-                    A stunning 4-bedroom, 3-bathroom villa in a peaceful
-                    suburban neighborhood...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">4-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$550,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/2.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Metropolitan Haven</h3>
-                  <p class="card__text">
-                    A chic and fully-furnished 2-bedroom apartment with
-                    panoramic city views...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">2-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">2-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$500,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/1.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Rustic Retreat Cottage</h3>
-                  <p class="card__text">
-                    An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
-                    community...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$550,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/1.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Seaside Serenity Villa</h3>
-                  <p class="card__text">
-                    A stunning 4-bedroom, 3-bathroom villa in a peaceful
-                    suburban neighborhood...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">4-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$550,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/2.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Metropolitan Haven</h3>
-                  <p class="card__text">
-                    A chic and fully-furnished 2-bedroom apartment with
-                    panoramic city views...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">2-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">2-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$500,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-              <div class="swiper-slide properties__card">
-                <div class="card__img">
-                  <img src="../img/properties/images/1.png" alt="image" />
-                </div>
-                <div class="card__description">
-                  <h3 class="card__title">Rustic Retreat Cottage</h3>
-                  <p class="card__text">
-                    An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
-                    community...
-                    <a href="/" class="card__link">Read More</a>
-                  </p>
-                </div>
-                <ul class="card__tags">
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bedroom.svg"
-                        alt="bedroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bedroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/bathroom.svg"
-                        alt="bathroom"
-                      />
-                    </div>
-                    <strong class="tag__name">3-Bathroom</strong>
-                  </li>
-                  <li class="card__tag">
-                    <div class="tag__img">
-                      <img
-                        src="../img/properties/icons/house.svg"
-                        alt="house"
-                      />
-                    </div>
-                    <strong class="tag__name">Villa</strong>
-                  </li>
-                </ul>
-                <div class="card__bottom">
-                  <div class="card__left">
-                    <div class="card__subtitle">Price</div>
-                    <strong class="card__price">$550,000</strong>
-                  </div>
-                  <a href="/" class="card__button button button--accent"
-                    >View Property Details</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="counter">
-            <div class="counter__block properties__count">
-              <strong id="properties__currentCount">1</strong> of <span></span>
-            </div>
-            <div class="counter__arrows">
+    <section class="links">
+      <div class="links__inner">
+        <ul class="links__list">
+          <a href="/" class="links__item">
+            <div class="links__arrow">
               <svg
-                id="properties__arrow--prev"
-                class="properties-button-prev counter__arrow"
-                width="58"
-                height="58"
-                viewBox="0 0 58 58"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect
-                  x="-0.5"
-                  y="0.5"
-                  width="57"
-                  height="57"
-                  rx="28.5"
-                  transform="matrix(-1 0 0 1 57 0)"
-                  fill="#1A1A1A"
-                />
-                <rect
-                  x="0.5"
-                  y="0.5"
-                  width="57"
-                  height="57"
-                  rx="28.5"
-                  stroke="#262626"
-                />
+                <circle cx="24" cy="24" r="24" fill="#1a1a1a" />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M39.5 29C39.5 29.6213 38.9963 30.125 38.375 30.125L22.4181 30.125L28.6547 36.0641C29.1026 36.4947 29.1166 37.2069 28.6859 37.6548C28.2553 38.1026 27.5431 38.1166 27.0953 37.6859L18.8453 29.8109C18.6247 29.5988 18.5 29.306 18.5 29C18.5 28.694 18.6247 28.4012 18.8453 28.1891L27.0953 20.3141C27.5431 19.8834 28.2553 19.8974 28.6859 20.3453C29.1166 20.7931 29.1026 21.5053 28.6547 21.9359L22.4181 27.875L38.375 27.875C38.9963 27.875 39.5 28.3787 39.5 29Z"
-                  fill="white"
-                />
-              </svg>
-              <svg
-                id="properties__arrow--next"
-                width="58"
-                class="properties-button-next counter__arrow"
-                height="58"
-                viewBox="0 0 58 58"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="-0.5"
-                  y="0.5"
-                  width="57"
-                  height="57"
-                  rx="28.5"
-                  transform="matrix(-1 0 0 1 57 0)"
-                  fill="#1A1A1A"
-                />
-                <rect
-                  x="-0.5"
-                  y="0.5"
-                  width="57"
-                  height="57"
-                  rx="28.5"
-                  transform="matrix(-1 0 0 1 57 0)"
-                  stroke="#262626"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M18.5 29C18.5 29.6213 19.0037 30.125 19.625 30.125L35.5819 30.125L29.3453 36.0641C28.8974 36.4947 28.8834 37.2069 29.3141 37.6548C29.7447 38.1026 30.4569 38.1166 30.9047 37.6859L39.1547 29.8109C39.3753 29.5988 39.5 29.306 39.5 29C39.5 28.694 39.3753 28.4012 39.1547 28.1891L30.9047 20.3141C30.4569 19.8834 29.7447 19.8974 29.3141 20.3453C28.8834 20.7931 28.8974 21.5053 29.3453 21.9359L35.5819 27.875L19.625 27.875C19.0037 27.875 18.5 28.3787 18.5 29Z"
-                  fill="white"
+                  d="M13.375 34.625L34.625 13.375M34.625 13.375L18.6875 13.375M34.625 13.375V29.3125"
+                  stroke="#4D4D4D"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
             </div>
-          </div>
-        </div>
+            <div class="links__wrapper">
+              <div class="links__img">
+                <svg
+                  class="links__circle"
+                  width="83"
+                  height="82"
+                  viewBox="0 0 83 82"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="0.5"
+                    width="81"
+                    height="81"
+                    rx="40.5"
+                    stroke="url(#paint0_linear_121_1892)"
+                  />
+                  <rect
+                    x="1"
+                    y="0.5"
+                    width="81"
+                    height="81"
+                    rx="40.5"
+                    stroke="url(#paint1_linear_121_1892)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_121_1892"
+                      x1="7.25"
+                      y1="86.5"
+                      x2="86.25"
+                      y2="-5.5"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.323723"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_121_1892"
+                      x1="82.25"
+                      y1="-10.5"
+                      x2="7.25"
+                      y2="82"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.576615"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <svg
+                  class="links__circle--sm links__circle"
+                  width="62"
+                  height="62"
+                  viewBox="0 0 62 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="61"
+                    height="61"
+                    rx="30.5"
+                    stroke="url(#paint0_linear_121_1893)"
+                  />
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="61"
+                    height="61"
+                    rx="30.5"
+                    stroke="url(#paint1_linear_121_1893)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_121_1893"
+                      x1="-6.75"
+                      y1="3.5"
+                      x2="61.75"
+                      y2="62"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.323723"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_121_1893"
+                      x1="74.25"
+                      y1="76"
+                      x2="2.25"
+                      y2="25"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.576615"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <img src="../img/links/icons/contacts/01.svg" alt="1" />
+              </div>
+              <h3 class="links__title">info@estatein.come</h3>
+            </div>
+          </a>
+          <a href="/" class="links__item">
+            <div class="links__arrow">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="24" cy="24" r="24" fill="#1a1a1a" />
+                <path
+                  d="M13.375 34.625L34.625 13.375M34.625 13.375L18.6875 13.375M34.625 13.375V29.3125"
+                  stroke="#4D4D4D"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="links__wrapper">
+              <div class="links__img">
+                <svg
+                  class="links__circle"
+                  width="83"
+                  height="82"
+                  viewBox="0 0 83 82"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="0.5"
+                    width="81"
+                    height="81"
+                    rx="40.5"
+                    stroke="url(#paint0_linear_121_1892)"
+                  />
+                  <rect
+                    x="1"
+                    y="0.5"
+                    width="81"
+                    height="81"
+                    rx="40.5"
+                    stroke="url(#paint1_linear_121_1892)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_121_1892"
+                      x1="7.25"
+                      y1="86.5"
+                      x2="86.25"
+                      y2="-5.5"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.323723"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_121_1892"
+                      x1="82.25"
+                      y1="-10.5"
+                      x2="7.25"
+                      y2="82"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.576615"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <svg
+                  class="links__circle--sm links__circle"
+                  width="62"
+                  height="62"
+                  viewBox="0 0 62 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="61"
+                    height="61"
+                    rx="30.5"
+                    stroke="url(#paint0_linear_121_1893)"
+                  />
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="61"
+                    height="61"
+                    rx="30.5"
+                    stroke="url(#paint1_linear_121_1893)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_121_1893"
+                      x1="-6.75"
+                      y1="3.5"
+                      x2="61.75"
+                      y2="62"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.323723"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_121_1893"
+                      x1="74.25"
+                      y1="76"
+                      x2="2.25"
+                      y2="25"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.576615"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <img src="../img/links/icons/contacts/02.svg" alt="2" />
+              </div>
+              <h3 class="links__title">+1 (123) 456-7890</h3>
+            </div>
+          </a>
+          <a href="/" class="links__item">
+            <div class="links__arrow">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="24" cy="24" r="24" fill="#1a1a1a" />
+                <path
+                  d="M13.375 34.625L34.625 13.375M34.625 13.375L18.6875 13.375M34.625 13.375V29.3125"
+                  stroke="#4D4D4D"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="links__wrapper">
+              <div class="links__img">
+                <svg
+                  class="links__circle"
+                  width="83"
+                  height="82"
+                  viewBox="0 0 83 82"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="0.5"
+                    width="81"
+                    height="81"
+                    rx="40.5"
+                    stroke="url(#paint0_linear_121_1892)"
+                  />
+                  <rect
+                    x="1"
+                    y="0.5"
+                    width="81"
+                    height="81"
+                    rx="40.5"
+                    stroke="url(#paint1_linear_121_1892)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_121_1892"
+                      x1="7.25"
+                      y1="86.5"
+                      x2="86.25"
+                      y2="-5.5"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.323723"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_121_1892"
+                      x1="82.25"
+                      y1="-10.5"
+                      x2="7.25"
+                      y2="82"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.576615"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <svg
+                  class="links__circle--sm links__circle"
+                  width="62"
+                  height="62"
+                  viewBox="0 0 62 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="61"
+                    height="61"
+                    rx="30.5"
+                    stroke="url(#paint0_linear_121_1893)"
+                  />
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="61"
+                    height="61"
+                    rx="30.5"
+                    stroke="url(#paint1_linear_121_1893)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_121_1893"
+                      x1="-6.75"
+                      y1="3.5"
+                      x2="61.75"
+                      y2="62"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.323723"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_121_1893"
+                      x1="74.25"
+                      y1="76"
+                      x2="2.25"
+                      y2="25"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.576615"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <img src="../img/links/icons/contacts/03.svg" alt="3" />
+              </div>
+              <h3 class="links__title">Main Headquarters</h3>
+            </div>
+          </a>
+          <a href="/" class="links__item">
+            <div class="links__arrow">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="24" cy="24" r="24" fill="#1a1a1a" />
+                <path
+                  d="M13.375 34.625L34.625 13.375M34.625 13.375L18.6875 13.375M34.625 13.375V29.3125"
+                  stroke="#4D4D4D"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="links__wrapper">
+              <div class="links__img">
+                <svg
+                  class="links__circle"
+                  width="83"
+                  height="82"
+                  viewBox="0 0 83 82"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="0.5"
+                    width="81"
+                    height="81"
+                    rx="40.5"
+                    stroke="url(#paint0_linear_121_1892)"
+                  />
+                  <rect
+                    x="1"
+                    y="0.5"
+                    width="81"
+                    height="81"
+                    rx="40.5"
+                    stroke="url(#paint1_linear_121_1892)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_121_1892"
+                      x1="7.25"
+                      y1="86.5"
+                      x2="86.25"
+                      y2="-5.5"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.323723"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_121_1892"
+                      x1="82.25"
+                      y1="-10.5"
+                      x2="7.25"
+                      y2="82"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.576615"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <svg
+                  class="links__circle--sm links__circle"
+                  width="62"
+                  height="62"
+                  viewBox="0 0 62 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="61"
+                    height="61"
+                    rx="30.5"
+                    stroke="url(#paint0_linear_121_1893)"
+                  />
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="61"
+                    height="61"
+                    rx="30.5"
+                    stroke="url(#paint1_linear_121_1893)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_121_1893"
+                      x1="-6.75"
+                      y1="3.5"
+                      x2="61.75"
+                      y2="62"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.323723"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_121_1893"
+                      x1="74.25"
+                      y1="76"
+                      x2="2.25"
+                      y2="25"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#A685FA" />
+                      <stop
+                        offset="0.576615"
+                        stop-color="#A685FA"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <img src="../img/links/icons/contacts/04.svg" alt="4" />
+              </div>
+              <h3 class="links__title">LinkedIn</h3>
+            </div>
+          </a>
+        </ul>
       </div>
     </section>
 
-    <section class="happen">
+    <section class="connect">
       <div class="container">
-        <div class="happen__inner">
-          <div class="happen__top">
+        <div class="connect__inner">
+          <div class="connect__top">
             <ul class="stars">
               <li class="stars__item">
                 <img src="../img/stars/1.svg" alt="star" />
@@ -894,12 +623,13 @@
               </li>
             </ul>
 
-            <h2 class="happen__title title">Let's Make it Happen</h2>
-            <p class="happen__text text">
-              Ready to take the first step toward your dream property? Fill out
-              the form below, and our real estate wizards will work their magic
-              to find your perfect match. Don't wait; let's embark on this
-              exciting journey together.
+            <h2 class="connect__title title">Let's Connect</h2>
+            <p class="connect__text text">
+              We're excited to connect with you and learn more about your real
+              estate goals. Use the form below to get in touch with Estatein.
+              Whether you're a prospective client, partner, or simply curious
+              about our services, we're here to answer your questions and
+              provide the assistance you need.
             </p>
           </div>
 
@@ -935,6 +665,8 @@
                   name="email"
                 />
               </li>
+            </ul>
+            <ul class="form__line">
               <li class="form__item">
                 <label class="label" for="tel">Phone</label>
                 <input
@@ -945,20 +677,18 @@
                   name="tel"
                 />
               </li>
-            </ul>
-            <ul class="form__line">
               <li class="form__item select">
-                <label for="location" class="label">Preferred Location</label>
+                <label for="inquiry_type" class="label">Inquiry Type</label>
                 <select
-                  id="location"
-                  name="location"
+                  id="inquiry_type"
+                  name="inquiry_type"
                   class="select__tag select__tag--form"
                   onchange="this.className='select__tag select__tag--form select__tag--white'"
                 >
-                  <option selected disabled>Select Location</option>
-                  <option>New-York</option>
-                  <option>Los Angeles</option>
-                  <option>Chicago</option>
+                  <option selected disabled>Select Inquiry Type</option>
+                  <option>Purchase of apartments</option>
+                  <option>Clarification of conditions</option>
+                  <option>Contacting technical support</option>
                 </select>
                 <div class="select__appearance select__appearance--form">
                   <img
@@ -968,60 +698,19 @@
                 </div>
               </li>
               <li class="form__item select">
-                <label for="property" class="label">Property Type</label>
-                <select
-                  onchange="this.className='select__tag select__tag--form select__tag--white'"
-                  id="property"
-                  name="property"
-                  class="select__tag select__tag--form"
-                  onchange="this.className='select__tag select__tag--white'"
+                <label for="hear" class="label"
+                  >How Did You Hear About Us?</label
                 >
-                  <option selected disabled>Select Property Type</option>
-                  <option>Villa</option>
-                  <option>Cottage</option>
-                  <option>Skyscraper</option>
-                </select>
-                <div class="select__appearance select__appearance--form">
-                  <img
-                    src="../img/pages/properties/happen/button.svg"
-                    alt="button"
-                  />
-                </div>
-              </li>
-              <li class="form__item select">
-                <label for="bathrooms" class="label">No. of Bathrooms</label>
                 <select
-                  onchange="this.className='select__tag select__tag--form select__tag--white'"
-                  id="bathrooms"
-                  name="bathrooms"
+                  id="hear"
+                  name="hear"
                   class="select__tag select__tag--form"
-                  onchange="this.className='select__tag select__tag--white'"
-                >
-                  <option selected disabled>Select no. of Bathrooms</option>
-                  <option>1 – 2</option>
-                  <option>2 – 3</option>
-                  <option>3+</option>
-                </select>
-                <div class="select__appearance select__appearance--form">
-                  <img
-                    src="../img/pages/properties/happen/button.svg"
-                    alt="button"
-                  />
-                </div>
-              </li>
-              <li class="form__item select">
-                <label for="location" class="label">No. of Bedrooms</label>
-                <select
                   onchange="this.className='select__tag select__tag--form select__tag--white'"
-                  id="location"
-                  name="location"
-                  class="select__tag select__tag--form"
-                  onchange="this.className='select__tag select__tag--white'"
                 >
-                  <option selected disabled>Select no. of Bedrooms</option>
-                  <option>1 – 2</option>
-                  <option>2 – 3</option>
-                  <option>3+</option>
+                  <option selected disabled>Select</option>
+                  <option>From friends</option>
+                  <option>Social network</option>
+                  <option>Other</option>
                 </select>
                 <div class="select__appearance select__appearance--form">
                   <img

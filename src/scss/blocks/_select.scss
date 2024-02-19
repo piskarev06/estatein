@@ -25,13 +25,24 @@
         transform: rotate(180deg) translateY(50%);
       }
 
-      & + .select__appearance--happen {
+      & + .select__appearance--form {
         transform: rotate(180deg);
       }
     }
 
     &--white {
       color: var(--heading-color) !important;
+    }
+
+    &--form {
+      padding: 24px 20px;
+
+      color: #666;
+      line-height: 20px;
+
+      background: var(--page-bg-lite);
+      border-radius: 12px;
+      border: 1px solid #262626;
     }
   }
 
@@ -44,7 +55,7 @@
 
     transition: all 0.5s ease-out;
 
-    &--happen {
+    &--form {
       top: unset;
       transform: unset;
       bottom: 22px;

@@ -1,0 +1,35 @@
+.form {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  border-radius: 12px;
+  border: 1px solid #262626;
+
+  &__line {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__terms {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  &__link {
+    text-decoration: underline !important;
+  }
+}

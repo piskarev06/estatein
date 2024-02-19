@@ -1,0 +1,23 @@
+.input {
+  display: block;
+  width: 100%;
+  padding: 24px 20px;
+
+  color: var(--heading-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+
+  background: var(--page-bg-lite);
+  border-radius: 12px;
+  border: 1px solid #262626;
+  transition: all 0.5s ease-out;
+
+  &::placeholder {
+    color: #666;
+  }
+
+  &:focus {
+    border-color: var(--accent);
+  }
+}
