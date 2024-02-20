@@ -14,10 +14,12 @@
 
   &__content {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
   &__item {
+    max-width: 783.5px;
     flex: 1;
     padding: 50px;
 
@@ -90,5 +92,9 @@
   &__button {
     display: block;
     text-align: center;
+  }
+
+  &__tabs {
+    margin-bottom: 50px;
   }
 }

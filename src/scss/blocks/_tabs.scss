@@ -1,0 +1,41 @@
+.tabs {
+  padding: 10px;
+  max-width: 516px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 12px;
+  background: var(--page-bg-lite);
+
+  &__item {
+    padding: 18px 28.83px;
+    flex: 1;
+
+    cursor: pointer;
+    text-align: center;
+    color: var(--heading-color);
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+
+    border-radius: 10px;
+    border: 1px solid #262626;
+    transition: all 0.5s ease-out;
+
+    &.active {
+      background: var(--page-bg);
+    }
+  }
+
+  &Contents__item {
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+  }
+}
