@@ -1,0 +1,151 @@
+.pricing {
+  padding: 75px 0;
+
+  &__top {
+    position: relative;
+    max-width: 1300px;
+
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__note {
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: var(--page-bg-lite);
+
+    margin-bottom: 50px;
+
+    & .note {
+      &__subtitle {
+        padding-right: 20px;
+
+        color: var(--heading-color);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+
+        border-right: 1px solid #262626;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  &__left {
+    position: sticky;
+    top: 15px;
+    max-width: 220px;
+    width: 100%;
+  }
+
+  &__right {
+    max-width: 1326px;
+    width: 100%;
+  }
+
+  &__listing {
+    display: inline-block;
+    font-size: 20px !important;
+
+    margin-bottom: 2px;
+  }
+
+  &__price {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 150%;
+  }
+
+  &__item {
+    padding: 50px;
+    display: block;
+
+    border: 1px solid #262626;
+    border-radius: 12px;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    & .item {
+      &__top {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid #262626;
+      }
+
+      &__name {
+        color: var(--heading-color);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+      }
+
+      &__line {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &:not(:last-child) {
+          padding-bottom: 40px;
+          margin-bottom: 40px;
+
+          border-bottom: 1px solid #262626;
+        }
+      }
+
+      &__block {
+        flex: 50%;
+
+        &:has(+ .item__block) {
+          border-right: 1px solid #262626;
+        }
+      }
+
+      &__subtitle {
+        display: inline-block;
+
+        margin-bottom: 16px;
+      }
+
+      &__desc {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        & strong {
+          color: var(--heading-color);
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 150%;
+        }
+
+        & span {
+          padding: 8px 14px;
+
+          border-radius: 28px;
+          border: 1px solid #262626;
+          background: var(--page-bg-lite);
+        }
+      }
+    }
+  }
+}
