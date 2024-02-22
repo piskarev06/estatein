@@ -7,6 +7,7 @@ body {
   color: var(--text-color);
   font-family: var(--font-main);
   overflow-x: hidden;
+  user-select: none;
 }
 
 select:focus,
@@ -21,7 +22,7 @@ option:first-child {
 }
 
 .swiper {
-  overflow: unset !important;
+  overflow: unset;
 }
 
 .swiper-slide {

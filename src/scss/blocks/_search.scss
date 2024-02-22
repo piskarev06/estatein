@@ -104,33 +104,4 @@
         no-repeat 0 0;
     }
   }
-
-  // &__select {
-  //   padding: 20px 20px 20px 64px;
-  //   width: 100%;
-
-  //   cursor: pointer;
-  //   appearance: none;
-
-  //   font-weight: 500;
-  //   font-size: 18px;
-  //   line-height: 150%;
-
-  //   border: 1px solid #262626;
-  //   border-radius: 12px;
-  //   background: var(--page-bg);
-  //   transition: all 0.5s ease-out;
-
-  //   &:focus {
-  //     border-color: var(--accent);
-
-  //     & + .search__appearance {
-  //       transform: rotate(180deg) translateY(50%);
-  //     }
-  //   }
-
-  //   &--white {
-  //     color: var(--heading-color);
-  //   }
-  // }
 }

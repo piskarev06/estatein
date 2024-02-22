@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Details Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,15 +17,411 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Urbanist:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     @@include('blocks/header.html')
+
+    <section class="details">
+      <div class="container">
+        <div class="details__inner">
+          <div class="details__top">
+            <div class="top__left">
+              <h3 class="top__name">Seaside Serenity Villa</h3>
+              <span class="top__location text">Malibu, California</span>
+            </div>
+            <div class="top__right">
+              <span class="top__subtitle text">Price</span>
+              <h4 class="top__price">$1,250,000</h4>
+            </div>
+          </div>
+
+          <div class="details__content">
+            <ul class="details__slider--sm swiper">
+              <div class="swiper-wrapper">
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/1.jpg"
+                    alt="1"
+                  />
+                </li>
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/2.jpg"
+                    alt="2"
+                  />
+                </li>
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/3.jpg"
+                    alt="3"
+                  />
+                </li>
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/4.jpg"
+                    alt="4"
+                  />
+                </li>
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/5.jpg"
+                    alt="5"
+                  />
+                </li>
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/6.jpg"
+                    alt="6"
+                  />
+                </li>
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/7.jpg"
+                    alt="7"
+                  />
+                </li>
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/8.jpg"
+                    alt="8"
+                  />
+                </li>
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/9.jpg"
+                    alt=""
+                  />
+                </li>
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/1.jpg"
+                    alt="1"
+                  />
+                </li>
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/2.jpg"
+                    alt="2"
+                  />
+                </li>
+                <li class="swiper-slide details__slide--sm">
+                  <img
+                    src="../img/pages/details/details/content/3.jpg"
+                    alt="3"
+                  />
+                </li>
+              </div>
+            </ul>
+            <ul class="details__slider swiper">
+              <div class="swiper-wrapper">
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/1.jpg"
+                    alt="1"
+                  />
+                </li>
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/2.jpg"
+                    alt="2"
+                  />
+                </li>
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/3.jpg"
+                    alt="3"
+                  />
+                </li>
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/4.jpg"
+                    alt="4"
+                  />
+                </li>
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/5.jpg"
+                    alt="5"
+                  />
+                </li>
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/6.jpg"
+                    alt="6"
+                  />
+                </li>
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/7.jpg"
+                    alt="7"
+                  />
+                </li>
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/8.jpg"
+                    alt="8"
+                  />
+                </li>
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/9.jpg"
+                    alt=""
+                  />
+                </li>
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/1.jpg"
+                    alt="1"
+                  />
+                </li>
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/2.jpg"
+                    alt="2"
+                  />
+                </li>
+                <li class="swiper-slide details__slide">
+                  <img
+                    src="../img/pages/details/details/content/3.jpg"
+                    alt="3"
+                  />
+                </li>
+              </div>
+            </ul>
+
+            <div class="details__management">
+              <svg
+                class="details-button-prev details__arrow--prev"
+                width="58"
+                height="58"
+                viewBox="0 0 58 58"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="-0.5"
+                  y="0.5"
+                  width="57"
+                  height="57"
+                  rx="28.5"
+                  transform="matrix(-1 0 0 1 57 0)"
+                  fill="#1A1A1A"
+                />
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="57"
+                  height="57"
+                  rx="28.5"
+                  stroke="#262626"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M39.5 29C39.5 29.6213 38.9963 30.125 38.375 30.125L22.4181 30.125L28.6547 36.0641C29.1026 36.4947 29.1166 37.2069 28.6859 37.6548C28.2553 38.1026 27.5431 38.1166 27.0953 37.6859L18.8453 29.8109C18.6247 29.5988 18.5 29.306 18.5 29C18.5 28.694 18.6247 28.4012 18.8453 28.1891L27.0953 20.3141C27.5431 19.8834 28.2553 19.8974 28.6859 20.3453C29.1166 20.7931 29.1026 21.5053 28.6547 21.9359L22.4181 27.875L38.375 27.875C38.9963 27.875 39.5 28.3787 39.5 29Z"
+                  fill="white"
+                />
+              </svg>
+              <div class="details-pagination"></div>
+              <svg
+                width="58"
+                class="details-button-next details__arrow--next"
+                height="58"
+                viewBox="0 0 58 58"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="-0.5"
+                  y="0.5"
+                  width="57"
+                  height="57"
+                  rx="28.5"
+                  transform="matrix(-1 0 0 1 57 0)"
+                  fill="#1A1A1A"
+                />
+                <rect
+                  x="-0.5"
+                  y="0.5"
+                  width="57"
+                  height="57"
+                  rx="28.5"
+                  transform="matrix(-1 0 0 1 57 0)"
+                  stroke="#262626"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18.5 29C18.5 29.6213 19.0037 30.125 19.625 30.125L35.5819 30.125L29.3453 36.0641C28.8974 36.4947 28.8834 37.2069 29.3141 37.6548C29.7447 38.1026 30.4569 38.1166 30.9047 37.6859L39.1547 29.8109C39.3753 29.5988 39.5 29.306 39.5 29C39.5 28.694 39.3753 28.4012 39.1547 28.1891L30.9047 20.3141C30.4569 19.8834 29.7447 19.8974 29.3141 20.3453C28.8834 20.7931 28.8974 21.5053 29.3453 21.9359L35.5819 27.875L19.625 27.875C19.0037 27.875 18.5 28.3787 18.5 29Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="details__bottom">
+            <div class="bottom__block">
+              <h4 class="bottom__title">Description</h4>
+              <p class="bottom__text text">
+                Discover your own piece of paradise with the Seaside Serenity
+                Villa. T With an open floor plan, breathtaking ocean views from
+                every room, and direct access to a pristine sandy beach, this
+                property is the epitome of coastal living.
+              </p>
+              <ul class="bottom__tags">
+                <li class="bottom__tag">
+                  <span class="tag__title tag__title--1 text">Bedrooms</span>
+                  <strong class="tag__desc">04</strong>
+                </li>
+                <li class="bottom__tag">
+                  <span class="tag__title tag__title--2 text">Bathrooms</span>
+                  <strong class="tag__desc">03</strong>
+                </li>
+                <li class="bottom__tag">
+                  <span class="tag__title tag__title--3 text">Area</span>
+                  <strong class="tag__desc">2,500 Square Feet</strong>
+                </li>
+              </ul>
+            </div>
+            <div class="bottom__block">
+              <h4 class="bottom__title">Key Features and Amenities</h4>
+              <ul class="bottom__list">
+                <li class="bottom__item text">
+                  Expansive oceanfront terrace for outdoor entertaining
+                </li>
+                <li class="bottom__item text">
+                  Gourmet kitchen with top-of-the-line appliances
+                </li>
+                <li class="bottom__item text">
+                  Private beach access for morning strolls and sunset views
+                </li>
+                <li class="bottom__item text">
+                  Master suite with a spa-inspired bathroom and ocean-facing
+                  balcony
+                </li>
+                <li class="bottom__item text">
+                  Private garage and ample storage space
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="inquire">
+      <div class="container">
+        <div class="inquire__inner">
+          <div class="inquire__left">
+            <ul class="stars">
+              <li class="stars__item">
+                <img src="../img/stars/1.png" alt="star" />
+              </li>
+              <li class="stars__item">
+                <img src="../img/stars/2.png" alt="star" />
+              </li>
+              <li class="stars__item">
+                <img src="../img/stars/3.png" alt="star" />
+              </li>
+            </ul>
+
+            <h2 class="inquire__title title">
+              Inquire About Seaside Serenity Villa
+            </h2>
+            <p class="inquire__text text">
+              Interested in this property? Fill out the form below, and our real
+              estate experts will get back to you with more details, including
+              scheduling a viewing and answering any questions you may have.
+            </p>
+          </div>
+          <form action="/" class="inquire__form form form--sm">
+            <ul class="form__line">
+              <li class="form__item">
+                <label class="label" for="fname">First Name</label>
+                <input
+                  class="input"
+                  placeholder="Enter First Name"
+                  type="text"
+                  id="fname"
+                  name="fname"
+                />
+              </li>
+              <li class="form__item">
+                <label class="label" for="lname">Last Name</label>
+                <input
+                  class="input"
+                  placeholder="Enter Last Name"
+                  type="text"
+                  id="lname"
+                  name="lname"
+                />
+              </li>
+            </ul>
+            <ul class="form__line">
+              <li class="form__item">
+                <label class="label" for="email">Email</label>
+                <input
+                  class="input"
+                  placeholder="Enter your Email"
+                  type="email"
+                  id="email"
+                  name="email"
+                />
+              </li>
+              <li class="form__item">
+                <label class="label" for="tel">Phone</label>
+                <input
+                  placeholder="Enter Phone Number"
+                  class="input"
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                />
+              </li>
+            </ul>
+            <ul class="form__line">
+              <li class="form__item select">
+                <label class="label">Selected Property</label>
+                <div class="inquire__selected">
+                  Seaside Serenity Villa, Malibu, California
+                </div>
+              </li>
+            </ul>
+            <ul class="form__line">
+              <li class="form__item">
+                <label class="label" for="message">Message</label>
+                <textarea
+                  class="textarea"
+                  placeholder="Enter your Message here.."
+                  name="message"
+                  id="message"
+                ></textarea>
+              </li>
+            </ul>
+            <div class="form__line form__bottom">
+              <div class="form__terms">
+                <input
+                  required
+                  class="checkbox"
+                  type="checkbox"
+                  name="terms"
+                  id="terms"
+                /><label for="terms" class="form__subtitle"
+                  >I agree with
+                  <a href="/" class="form__link">Terms of Use</a> and
+                  <a href="/" class="form__link">Privacy Policy</a></label
+                >
+              </div>
+              <button class="button button--accent form__bottom" type="submit">
+                Send Your Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <section class="pricing">
       <div class="container">

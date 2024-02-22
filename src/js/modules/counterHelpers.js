@@ -10,7 +10,7 @@ export const incrementCount = (counterId) => {
 export const addArrowListener = (arrowId, counterId, countAction) => {
   document
     .getElementById(arrowId)
-    .addEventListener("click", () => countAction(counterId));
+    .addEventListener('click', () => countAction(counterId));
 };
 
 export const setCountOfSlides = (slidesClassName, counterClassName) => {
