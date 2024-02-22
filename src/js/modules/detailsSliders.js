@@ -25,16 +25,4 @@ export const detailsSliders = () => {
       swiper: detailsSliderSm
     }
   });
-
-  // const swipeAllSliders = (index) => {
-  //   detailsSliderSm.slideToLoop(index);
-  //   detailsSlider.slideToLoop(index);
-  // };
-
-  // detailsSliderSm.on('slideChange', () =>
-  //   swipeAllSliders(detailsSliderSm.realIndex)
-  // );
-  // detailsSlider.on('slideChange', () =>
-  //   swipeAllSliders(detailsSlider.realIndex)
-  // );
 };
