@@ -3,11 +3,16 @@ html {
 }
 
 body {
-  background-color: var(--page-bg);
-  color: var(--text-color);
-  font-family: var(--font-main);
   overflow-x: hidden;
   user-select: none;
+
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+
+  background-color: var(--page-bg);
 }
 
 select:focus,
@@ -26,16 +31,16 @@ option:first-child {
 }
 
 .swiper-slide {
-  height: auto !important;
+  height: auto;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  width: unset !important;
-  height: unset !important;
-  margin-top: unset !important;
-  display: unset !important;
-  color: unset !important;
+  width: unset;
+  height: unset;
+  margin-top: unset;
+  display: unset;
+  color: unset;
 }
 
 .swiper-button-disabled {

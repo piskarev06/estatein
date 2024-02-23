@@ -7,7 +7,7 @@
   align-items: center;
   gap: 10px;
 
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   background: var(--page-bg-lite);
 
   &__item {
@@ -23,8 +23,8 @@
     line-height: 150%;
 
     border-radius: 10px;
-    border: 1px solid #262626;
-    transition: all 0.5s ease-out;
+    border: var(--border);
+    transition: var(--transition);
 
     &.active {
       background: var(--page-bg);

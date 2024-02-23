@@ -1,7 +1,7 @@
 .header {
   padding: 20px 0;
   background-color: var(--page-bg-lite);
-  border-bottom: 1px solid #262626;
+  border-bottom: var(--border);
 
   &__inner {
     display: flex;
@@ -21,10 +21,6 @@
     .nav__link {
       position: relative;
       display: inline-block;
-
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 150%;
 
       color: var(--heading-color);
 
@@ -57,7 +53,7 @@
         padding: 14px 24px;
 
         background-color: var(--page-bg);
-        border: 1px solid #262626;
+        border: var(--border);
         border-radius: 10px;
       }
     }

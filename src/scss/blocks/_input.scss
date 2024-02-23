@@ -4,17 +4,15 @@
   padding: 24px 20px;
 
   color: var(--heading-color);
-  font-weight: 500;
-  font-size: 18px;
   line-height: 20px;
 
   background: var(--page-bg-lite);
-  border-radius: 8px;
-  border: 1px solid #262626;
-  transition: all 0.5s ease-out;
+  border-radius: var(--border-radius-sm);
+  border: var(--border);
+  transition: var(--transition);
 
   &::placeholder {
-    color: #666;
+    color: var(--grey-40);
   }
 
   &:focus {

@@ -2,8 +2,8 @@
   padding: 100px 0;
   position: relative;
 
-  border-top: 1px solid var(--Grey-15, #262626);
-  border-bottom: 1px solid var(--Grey-15, #262626);
+  border-top: var(--border);
+  border-bottom: var(--border);
 
   &__inner {
     display: flex;
@@ -13,18 +13,6 @@
 
   &__block {
     max-width: 1154px;
-  }
-
-  &__title {
-    margin-bottom: 14px;
-  }
-
-  &__text {
-    color: var(--text-color);
-    font-family: Urbanist;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 150%;
   }
 
   &__decor {

@@ -21,10 +21,10 @@
       height: 28px;
 
       border-radius: 4px;
-      border: 1px solid #262626;
+      border: var(--border);
       background: var(--page-bg-lite);
       background-position: center;
-      transition: all 0.3s ease-out;
+      transition: var(--transition-sm);
     }
   }
 

@@ -1,0 +1,34 @@
+.section {
+  padding: 75px 0;
+
+  &--top {
+    padding: 150px 0 75px;
+  }
+
+  &--bottom {
+    padding: 75px 0 150px;
+  }
+
+  &--full {
+    padding: 150px 0;
+  }
+
+  &__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 80px;
+
+    &--block {
+      display: block;
+      justify-content: unset;
+      align-items: unset;
+    }
+  }
+
+  &__title {
+    margin-bottom: 14px;
+  }
+}

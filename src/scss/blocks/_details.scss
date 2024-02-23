@@ -19,7 +19,6 @@
         color: var(--heading-color);
         font-weight: 600;
         font-size: 30px;
-        line-height: 150%;
       }
 
       &__location {
@@ -28,8 +27,8 @@
 
         color: var(--heading-color);
 
-        border-radius: 8px;
-        border: 1px solid #262626;
+        border-radius: var(--border-radius-sm);
+        border: var(--border);
 
         &::before {
           position: absolute;
@@ -48,13 +47,6 @@
         display: inline-block;
         margin-bottom: 2px;
       }
-
-      &__price {
-        color: var(--heading-color);
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 150%;
-      }
     }
   }
 
@@ -63,8 +55,8 @@
 
     text-align: center;
 
-    border: 1px solid #262626;
-    border-radius: 12px;
+    border: var(--border);
+    border-radius: var(--border-radius);
     background: var(--page-bg-lite);
 
     margin-bottom: 30px;
@@ -79,8 +71,8 @@
       overflow: hidden;
       padding: 20px;
 
-      border-radius: 12px;
-      border: 1px solid #262626;
+      border-radius: var(--border-radius);
+      border: var(--border);
       background: var(--page-bg);
 
       margin-bottom: 30px;
@@ -101,7 +93,7 @@
       width: 100%;
 
       opacity: 0.5;
-      transition: all 0.3s ease-out;
+      transition: var(--transition-sm);
 
       &.swiper-slide-thumb-active {
         opacity: 1;
@@ -111,7 +103,7 @@
         width: 144px;
         height: 100%;
 
-        border-radius: 8px;
+        border-radius: var(--border-radius-sm);
       }
     }
   }
@@ -138,10 +130,10 @@
       height: 5px;
 
       border-radius: 60px;
-      background: #4d4d4d;
+      background: var(--grey-30);
 
       opacity: unset;
-      transition: all 0.3s ease-out;
+      transition: var(--transition-sm);
 
       &-active {
         background: var(--accent);
@@ -161,16 +153,11 @@
         max-width: 783px;
         width: 100%;
 
-        border-radius: 12px;
-        border: 1px solid #262626;
+        border-radius: var(--border-radius);
+        border: var(--border);
       }
 
       &__title {
-        color: var(--heading-color);
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 150%;
-
         margin-bottom: 14px;
       }
 
@@ -184,14 +171,14 @@
         align-items: flex-start;
         gap: 20px;
 
-        border-top: 1px solid #262626;
+        border-top: var(--border);
       }
 
       &__tag {
         flex: 1;
 
         &:not(:last-child) {
-          border-right: 1px solid #262626;
+          border-right: var(--border);
         }
 
         & .tag {

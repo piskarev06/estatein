@@ -4,18 +4,16 @@
   height: 170px;
 
   color: var(--heading-color);
-  font-weight: 500;
-  font-size: 18px;
   line-height: 20px;
 
-  border: 1px solid #262626;
-  border-radius: 8px;
+  border: var(--border);
+  border-radius: var(--border-radius-sm);
   background: var(--page-bg-lite);
   resize: none;
-  transition: all 0.5s ease-out;
+  transition: var(--transition);
 
   &::placeholder {
-    color: #666;
+    color: var(--grey-40);
   }
 
   &:focus {

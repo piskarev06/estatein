@@ -1,10 +1,10 @@
 .links {
   padding: 20px;
 
-  border-top: 1px solid #262626;
-  border-bottom: 1px solid #262626;
+  border-top: var(--border);
+  border-bottom: var(--border);
   background: var(--page-bg);
-  box-shadow: 0px 0px 0px 10px #191919;
+  box-shadow: var(--box-shadow);
 
   &__list {
     display: flex;
@@ -17,10 +17,10 @@
     padding: 64px 20px 40px 20px;
     flex: 1;
 
-    border-radius: 12px;
-    border: 1px solid #262626;
+    border-radius: var(--border-radius);
+    border: var(--border);
     background: var(--page-bg-lite);
-    transition: all 0.5s ease-out;
+    transition: var(--transitiion);
 
     &:hover {
       border: 1px solid var(--accent);
@@ -46,7 +46,7 @@
 
     & svg circle,
     & svg path {
-      transition: all 0.5s ease-out;
+      transition: var(--transitiion);
     }
   }
 
@@ -76,7 +76,6 @@
     text-align: center;
 
     animation: 5.5s linear 0s normal none infinite running rotationCircle;
-    
 
     &--sm {
       animation: 4s linear 0s normal none infinite running rotationCircle;
@@ -86,10 +85,8 @@
   &__title {
     color: var(--heading-color);
     text-align: center;
-    font-family: Urbanist;
     font-size: 20px;
     font-weight: 600;
-    line-height: 150%;
   }
 }
 

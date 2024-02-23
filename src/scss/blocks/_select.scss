@@ -9,14 +9,10 @@
     cursor: pointer;
     appearance: none;
 
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
-
-    border: 1px solid #262626;
-    border-radius: 8px;
+    border: var(--border);
+    border-radius: var(--border-radius-sm);
     background: var(--page-bg);
-    transition: all 0.5s ease-out;
+    transition: var(--transition);
 
     &:focus {
       border-color: var(--accent);
@@ -37,12 +33,12 @@
     &--form {
       padding: 24px 20px;
 
-      color: #666;
+      color: var(--grey-40);
       line-height: 20px;
 
       background: var(--page-bg-lite);
-      border-radius: 12px;
-      border: 1px solid #262626;
+      border-radius: var(--border-radius);
+      border: var(--border);
     }
   }
 
@@ -53,7 +49,7 @@
     transform: translateY(-50%);
     right: 20px;
 
-    transition: all 0.5s ease-out;
+    transition: var(--transition);
 
     &--form {
       top: unset;

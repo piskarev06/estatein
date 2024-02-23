@@ -15,18 +15,16 @@
     width: 100%;
 
     color: var(--heading-color);
-    font-weight: 500;
     font-size: 24px;
-    line-height: 150%;
 
-    box-shadow: 0px 0px 0px 10px #191919;
+    box-shadow: var(--box-shadow);
     background: var(--page-bg);
     border-radius: 12px 12px 0 0;
-    border: 1px solid #262626;
-    transition: all 0.5s ease-out;
+    border: var(--border);
+    transition: var(--transition);
 
     &::placeholder {
-      color: #666;
+      color: var(--grey-40);
     }
 
     &:focus {
@@ -48,7 +46,7 @@
     align-items: center;
     gap: 20px;
 
-    border-radius: 12px;
+    border-radius: var(--border-radius);
     background: var(--page-bg-lite);
   }
 

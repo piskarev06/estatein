@@ -1,6 +1,4 @@
 .inquire {
-  padding: 75px 0;
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -14,10 +12,6 @@
     width: 100%;
   }
 
-  &__title {
-    margin-bottom: 14px;
-  }
-
   &__form {
     max-width: 984px;
     width: 100%;
@@ -28,12 +22,11 @@
     padding: 26px 20px;
 
     color: var(--heading-color);
-    font-weight: 500;
     font-size: 20px;
     line-height: 20px;
 
     background: var(--page-bg-lite);
-    border-radius: 8px;
+    border-radius: var(--border-radius-sm);
 
     &::after {
       position: absolute;

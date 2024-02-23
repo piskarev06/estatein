@@ -1,15 +1,6 @@
 .pricing {
-  padding: 75px 0;
-
   &__top {
-    position: relative;
     max-width: 1300px;
-
-    margin-bottom: 80px;
-  }
-
-  &__title {
-    margin-bottom: 14px;
   }
 
   &__note {
@@ -18,8 +9,8 @@
     align-items: center;
     gap: 20px;
 
-    border-radius: 12px;
-    border: 1px solid #262626;
+    border-radius: var(--border-radius);
+    border: var(--border);
     background: var(--page-bg-lite);
 
     margin-bottom: 50px;
@@ -28,12 +19,7 @@
       &__subtitle {
         padding-right: 20px;
 
-        color: var(--heading-color);
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 150%;
-
-        border-right: 1px solid #262626;
+        border-right: var(--border);
       }
     }
   }
@@ -67,15 +53,14 @@
     color: var(--heading-color);
     font-weight: 600;
     font-size: 40px;
-    line-height: 150%;
   }
 
   &__item {
     padding: 50px;
     display: block;
 
-    border: 1px solid #262626;
-    border-radius: 12px;
+    border: var(--border);
+    border-radius: var(--border-radius);
 
     &:not(:last-child) {
       margin-bottom: 50px;
@@ -89,14 +74,7 @@
         align-items: center;
         justify-content: space-between;
 
-        border-bottom: 1px solid #262626;
-      }
-
-      &__name {
-        color: var(--heading-color);
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 150%;
+        border-bottom: var(--border);
       }
 
       &__line {
@@ -108,7 +86,7 @@
           padding-bottom: 40px;
           margin-bottom: 40px;
 
-          border-bottom: 1px solid #262626;
+          border-bottom: var(--border);
         }
       }
 
@@ -116,7 +94,7 @@
         flex: 50%;
 
         &:has(+ .item__block) {
-          border-right: 1px solid #262626;
+          border-right: var(--border);
         }
       }
 
@@ -131,18 +109,11 @@
         align-items: center;
         gap: 16px;
 
-        & strong {
-          color: var(--heading-color);
-          font-weight: 600;
-          font-size: 24px;
-          line-height: 150%;
-        }
-
         & span {
           padding: 8px 14px;
 
           border-radius: 28px;
-          border: 1px solid #262626;
+          border: var(--border);
           background: var(--page-bg-lite);
         }
       }

@@ -1,12 +1,6 @@
 .team {
-  padding: 75px 0;
-
   &__top {
     margin-bottom: 80px;
-  }
-
-  &__title {
-    margin-bottom: 14px;
   }
 
   &__list {
@@ -19,8 +13,8 @@
     padding: 30px;
     text-align: center;
 
-    border-radius: 12px;
-    border: 1px solid #262626;
+    border-radius: var(--border-radius);
+    border: var(--border);
 
     &:hover {
       & .item__redirection {
@@ -43,11 +37,7 @@
       }
 
       &__title {
-        font-weight: 600;
-        font-size: 24px;
         line-height: 120%;
-
-        color: var(--heading-color);
 
         margin-bottom: 6px;
       }
@@ -55,8 +45,6 @@
       &__post {
         display: inline-block;
 
-        font-size: 18px;
-        font-weight: 500;
         line-height: 120%;
 
         margin-bottom: 24px;
@@ -69,14 +57,10 @@
         text-align: left;
         color: var(--heading-color);
 
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 150%;
-
         background: var(--page-bg-lite);
         border-radius: 100px;
-        border: 1px solid #262626;
-        transition: all 0.5s ease-out;
+        border: var(--border);
+        transition: var(--transition);
       }
 
       &__link {
@@ -91,7 +75,7 @@
         display: inline-block;
 
         & svg rect {
-          transition: all 0.5s ease-out;
+          transition: var(--transition);
         }
 
         &:hover {

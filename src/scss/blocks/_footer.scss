@@ -35,9 +35,9 @@
     width: 100%;
 
     color: var(--heading-color);
-    border-radius: 12px;
-    border: 1px solid #262626;
-    background: var(--Grey-08, #141414);
+    border-radius: var(--border-radius);
+    border: var(--border);
+    background: var(--page-bg);
 
     transition: all 0.5s ease-out;
 
@@ -46,9 +46,6 @@
     }
 
     &::placeholder {
-      font-family: Urbanist;
-      font-size: 18px;
-      font-weight: 500;
       line-height: 24px;
       letter-spacing: -0.108px;
     }
@@ -68,9 +65,7 @@
     align-items: flex-start;
 
     & .item__title {
-      font-family: Urbanist;
       font-size: 20px;
-      font-weight: 500;
       line-height: 24px;
       letter-spacing: -0.12px;
 
@@ -79,9 +74,6 @@
 
     & .list__item {
       color: var(--heading-color);
-      font-family: Urbanist;
-      font-size: 18px;
-      font-weight: 500;
       line-height: 24px;
       letter-spacing: -0.108px;
 
@@ -132,9 +124,6 @@
     gap: 38px;
 
     color: var(--heading-color);
-    font-family: Urbanist;
-    font-size: 18px;
-    font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.108px;
   }
@@ -148,8 +137,4 @@
       opacity: 0;
     }
   }
-
-  // @media (max-width: 1200px) {
-  // 	font-size: 26px;
-  // }
 }

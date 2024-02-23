@@ -2,15 +2,14 @@
   padding: 18px 24px;
 
   display: inline-block;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 150%;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 
   color: var(--heading-color) !important;
 
-  border-radius: 8px;
-  border: 1px solid;
-  border-color: #262626;
+  border-radius: var(--border-radius-sm);
+  border: var(--border);
 
   background: linear-gradient(to left, var(--page-bg) 50%, var(--accent) 50%)
     right;

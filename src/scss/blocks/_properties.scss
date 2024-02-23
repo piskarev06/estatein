@@ -1,26 +1,10 @@
 .properties {
-  padding-top: 150px;
-  padding-bottom: 75px;
-
-  &__top {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: 80px;
-  }
-
   &__wrapper {
     max-width: 1200px;
 
     &--properties {
       max-width: 1300px;
     }
-  }
-
-  &__title {
-    margin-bottom: 14px;
   }
 
   &__slider {
@@ -31,8 +15,8 @@
 
   &__card {
     padding: 40px;
-    border-radius: 12px;
-    border: 1px solid #262626;
+    border-radius: var(--border-radius);
+    border: var(--border);
 
     & .card {
       &__img {
@@ -44,27 +28,12 @@
       }
 
       &__title {
-        color: var(--heading-color);
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 150%;
-
         margin-bottom: 6px;
-      }
-
-      &__text {
-        font-family: Urbanist;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 150%;
       }
 
       &__link {
         color: var(--heading-color);
-        font-family: Urbanist;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 150%;
+
         text-decoration-line: underline;
       }
 
@@ -83,15 +52,11 @@
 
         padding: 8px 14px;
         border-radius: 28px;
-        border: 1px solid #262626;
+        border: var(--border);
         background: var(--page-bg-lite);
 
         & .tag__name {
           color: var(--heading-color);
-          font-family: Urbanist;
-          font-size: 18px;
-          font-weight: 500;
-          line-height: 150%;
         }
       }
 
@@ -102,20 +67,7 @@
       }
 
       &__subtitle {
-        font-family: Urbanist;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 150%; /* 27px */
-
         margin-bottom: 2px;
-      }
-
-      &__price {
-        color: var(--heading-color);
-        font-family: Urbanist;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 150%; /* 36px */
       }
     }
   }
