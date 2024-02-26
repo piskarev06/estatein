@@ -7,6 +7,7 @@ import { propertiesSlider } from './modules/propertiesSlider.js';
 import { reviewsSlider } from './modules/reviewsSlider.js';
 import { addRotateStars } from './modules/rotateStars.js';
 import { detailsSliders } from './modules/detailsSliders.js';
+import { addPhoneMask } from './modules/addPhoneMask.js';
 
 addRotateStars('.stars__item');
 
@@ -17,3 +18,4 @@ checkHtmlElement('.clients__slider', clientsSlider);
 checkHtmlElement('.steps', addStepsAnimationVariables);
 checkHtmlElement('.discover__tab', discoverTabs);
 checkHtmlElement('.details__slider', detailsSliders);
+checkHtmlElement('.tel', addPhoneMask);

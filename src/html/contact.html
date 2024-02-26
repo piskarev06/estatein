@@ -637,17 +637,30 @@
             <ul class="form__line">
               <li class="form__item">
                 <label class="label" for="fname">First Name</label>
-                <input class="input" placeholder="Enter First Name" type="
-                id="fname" name="fname" />
+                <input
+                  required
+                  class="input"
+                  placeholder="Enter First Name"
+                  type="text"
+                  id="fname"
+                  name="fname"
+                />
               </li>
               <li class="form__item">
                 <label class="label" for="lname">Last Name</label>
-                <input class="input" placeholder="Enter Last Name" type="
-                id="lname" name="lname" />
+                <input
+                  required
+                  class="input"
+                  placeholder="Enter Last Name"
+                  type="text"
+                  id="lname"
+                  name="lname"
+                />
               </li>
               <li class="form__item">
                 <label class="label" for="email">Email</label>
                 <input
+                  required
                   class="input"
                   placeholder="Enter your Email"
                   type="email"
@@ -660,8 +673,9 @@
               <li class="form__item">
                 <label class="label" for="tel">Phone</label>
                 <input
+                  required
                   placeholder="Enter Phone Number"
-                  class="input"
+                  class="input tel"
                   type="tel"
                   id="tel"
                   name="tel"
@@ -670,6 +684,7 @@
               <li class="form__item select">
                 <label for="inquiry_type" class="label">Inquiry Type</label>
                 <select
+                  required
                   id="inquiry_type"
                   name="inquiry_type"
                   class="select__tag select__tag--form"
@@ -689,6 +704,7 @@
                   >How Did You Hear About Us?</label
                 >
                 <select
+                  required
                   id="hear"
                   name="hear"
                   class="select__tag select__tag--form"
@@ -708,6 +724,7 @@
               <li class="form__item">
                 <label class="label" for="message">Message</label>
                 <textarea
+                  required
                   class="textarea"
                   placeholder="Enter your Message here.."
                   name="message"

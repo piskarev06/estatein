@@ -41,9 +41,10 @@
 
     <section class="search">
       <div class="container">
-        <div class="search__inner">
+        <form action="/" class="search__inner">
           <div class="search__top">
             <input
+              required
               placeholder="Search For A Property"
               type="text"
               class="search__input"
@@ -58,6 +59,7 @@
           <ul class="search__bottom">
             <li class="search__item search__item--1 select">
               <select
+                required
                 class="select__tag"
                 onchange="this.className='select__tag select__tag--white'"
               >
@@ -72,6 +74,7 @@
             </li>
             <li class="search__item search__item--2 select">
               <select
+                required
                 class="select__tag"
                 onchange="this.className='select__tag select__tag--white'"
               >
@@ -86,6 +89,7 @@
             </li>
             <li class="search__item search__item--3 select">
               <select
+                required
                 class="select__tag"
                 onchange="this.className='select__tag select__tag--white'"
               >
@@ -102,6 +106,7 @@
             </li>
             <li class="search__item search__item--4 select">
               <select
+                required
                 class="select__tag"
                 onchange="this.className='select__tag select__tag--white'"
               >
@@ -117,6 +122,7 @@
             </li>
             <li class="search__item search__item--5 select">
               <select
+                required
                 class="select__tag"
                 onchange="this.className='select__tag select__tag--white'"
               >
@@ -132,7 +138,7 @@
               </div>
             </li>
           </ul>
-        </div>
+        </form>
       </div>
     </section>
 
@@ -942,17 +948,30 @@
             <ul class="form__line">
               <li class="form__item">
                 <label class="label" for="fname">First Name</label>
-                <input class="input" placeholder="Enter First Name" type="
-                id="fname" name="fname" />
+                <input
+                  required
+                  class="input"
+                  placeholder="Enter First Name"
+                  type="text"
+                  id="fname"
+                  name="fname"
+                />
               </li>
               <li class="form__item">
                 <label class="label" for="lname">Last Name</label>
-                <input class="input" placeholder="Enter Last Name" type="
-                id="lname" name="lname" />
+                <input
+                  required
+                  class="input"
+                  placeholder="Enter Last Name"
+                  type="text"
+                  id="lname"
+                  name="lname"
+                />
               </li>
               <li class="form__item">
                 <label class="label" for="email">Email</label>
                 <input
+                  readonly
                   class="input"
                   placeholder="Enter your Email"
                   type="email"
@@ -963,8 +982,9 @@
               <li class="form__item">
                 <label class="label" for="tel">Phone</label>
                 <input
+                  required
                   placeholder="Enter Phone Number"
-                  class="input"
+                  class="input tel"
                   type="tel"
                   id="tel"
                   name="tel"
@@ -975,6 +995,7 @@
               <li class="form__item select">
                 <label for="location" class="label">Preferred Location</label>
                 <select
+                  required
                   id="location"
                   name="location"
                   class="select__tag select__tag--form"
@@ -992,6 +1013,7 @@
               <li class="form__item select">
                 <label for="property" class="label">Property Type</label>
                 <select
+                  required
                   onchange="this.className='select__tag select__tag--form select__tag--white'"
                   id="property"
                   name="property"
@@ -1010,6 +1032,7 @@
               <li class="form__item select">
                 <label for="bathrooms" class="label">No. of Bathrooms</label>
                 <select
+                  required
                   onchange="this.className='select__tag select__tag--form select__tag--white'"
                   id="bathrooms"
                   name="bathrooms"
@@ -1028,6 +1051,7 @@
               <li class="form__item select">
                 <label for="location" class="label">No. of Bedrooms</label>
                 <select
+                  required
                   onchange="this.className='select__tag select__tag--form select__tag--white'"
                   id="location"
                   name="location"
@@ -1048,6 +1072,7 @@
               <li class="form__item">
                 <label class="label" for="message">Message</label>
                 <textarea
+                  required
                   class="textarea"
                   placeholder="Enter your Message here.."
                   name="message"
