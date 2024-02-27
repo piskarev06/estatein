@@ -116,6 +116,10 @@
 
     background: var(--page-bg);
     border-radius: 100px;
+
+    & svg {
+      cursor: pointer;
+    }
   }
 
   &-pagination {
