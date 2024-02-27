@@ -1,0 +1,41 @@
+.background {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  scale: 2;
+
+  &__block {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  & g {
+    height: 100%;
+
+    animation-duration: 80s;
+    animation-name: line-movement;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes line-movement {
+  from {
+    transform: translateX(20%);
+  }
+
+  50% {
+    transform: translateX(40%);
+  }
+
+  to {
+    transform: translateX(20%);
+  }
+}

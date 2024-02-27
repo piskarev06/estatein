@@ -57,7 +57,7 @@
 
   &__text {
     display: block;
-    max-width: 660px;
+    max-width: 758px;
 
     margin-bottom: 50px;
 
@@ -91,7 +91,8 @@
     }
 
     &--about {
-      position: unset;
+      border: var(--border);
+      border-radius: var(--border-radius);
 
       & img {
         min-height: 546px;

@@ -9,45 +9,9 @@
   }
 
   &__list {
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-
-  &__background {
-    position: absolute;
-    z-index: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    & path {
-      &:nth-child(2n + 1) {
-        animation-duration: 170s;
-        animation-name: line-movement;
-        animation-iteration-count: infinite;
-      }
-
-      &:nth-child(3n) {
-        animation-duration: 180s;
-        animation-name: line-movement-2;
-        animation-iteration-count: infinite;
-      }
-
-      &:nth-child(2n + 1) {
-        animation-duration: 160s;
-        animation-name: line-movement;
-        animation-iteration-count: infinite;
-      }
-
-      &:nth-child(3n + 1) {
-        animation-duration: 190s;
-        animation-name: line-movement-2;
-        animation-iteration-count: infinite;
-      }
-    }
   }
 
   &__line {
@@ -67,33 +31,5 @@
       display: flex;
       gap: 20px;
     }
-  }
-}
-
-@keyframes line-movement {
-  from {
-    transform: translateX(50%);
-  }
-
-  50% {
-    transform: translateX(-50%);
-  }
-
-  to {
-    transform: translateX(50%);
-  }
-}
-
-@keyframes line-movement-2 {
-  from {
-    transform: translateX(-50%);
-  }
-
-  50% {
-    transform: translateX(50%);
-  }
-
-  to {
-    transform: translateX(-50%);
   }
 }
