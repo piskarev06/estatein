@@ -24,6 +24,18 @@
     animation-name: line-movement;
     animation-iteration-count: infinite;
   }
+
+  &--sm {
+    left: unset;
+    transform: unset;
+
+    scale: 30;
+
+    & g {
+      animation-duration: 80s;
+      animation-name: line-movement--sm;
+    }
+  }
 }
 
 @keyframes line-movement {
@@ -37,5 +49,19 @@
 
   to {
     transform: translateX(20%);
+  }
+}
+
+@keyframes line-movement--sm {
+  from {
+    transform: translateX(10%);
+  }
+
+  50% {
+    transform: translateX(20%);
+  }
+
+  to {
+    transform: translateX(10%);
   }
 }

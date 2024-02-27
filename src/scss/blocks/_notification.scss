@@ -1,0 +1,26 @@
+.notification {
+  &__inner {
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--heading-color);
+    text-align: center;
+  }
+
+  &__text {
+    width: 100%;
+  }
+
+  &__link {
+    text-decoration: underline !important;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+}
