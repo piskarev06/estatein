@@ -1,4 +1,7 @@
 .notification {
+  background-color: var(--page-bg-lite);
+  border-bottom: var(--border);
+
   &__inner {
     padding: 18px 0;
     display: flex;

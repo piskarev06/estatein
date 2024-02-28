@@ -93,7 +93,7 @@
       width: 100%;
 
       opacity: 0.5;
-      transition: var(--transition-sm);
+      transition: opacity 0.3s ease-out;
 
       &.swiper-slide-thumb-active {
         opacity: 1;
