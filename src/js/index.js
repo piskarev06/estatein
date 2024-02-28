@@ -1,3 +1,4 @@
+import { addNotificationListener } from './modules/addNotificationListener.js';
 import { addStepsAnimationVariables } from './modules/addStepsAnimationVariables.js';
 import { checkHtmlElement } from './modules/checkHtmlElement.js';
 import { clientsSlider } from './modules/clientsSlider.js';
@@ -9,6 +10,7 @@ import { addRotateStars } from './modules/rotateStars.js';
 import { detailsSliders } from './modules/detailsSliders.js';
 import { addPhoneMask } from './modules/addPhoneMask.js';
 
+addNotificationListener();
 addRotateStars('.stars__item');
 
 checkHtmlElement('.properties__slider', propertiesSlider);
