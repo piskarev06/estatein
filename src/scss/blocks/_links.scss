@@ -14,7 +14,7 @@
 
   &__item {
     position: relative;
-    padding: 64px 20px 40px 20px;
+    padding: 64px 20px 40px;
     flex: 1;
 
     border-radius: var(--border-radius);
@@ -75,10 +75,10 @@
     right: 0;
     text-align: center;
 
-    animation: 5.5s linear 0s normal none infinite running rotationCircle;
+    animation: 5.5s linear 0s normal none infinite running rotation-circle;
 
     &--sm {
-      animation: 4s linear 0s normal none infinite running rotationCircle;
+      animation: 4s linear 0s normal none infinite running rotation-circle;
     }
   }
 
@@ -90,10 +90,11 @@
   }
 }
 
-@keyframes rotationCircle {
+@keyframes rotation-circle {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

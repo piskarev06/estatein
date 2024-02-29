@@ -24,7 +24,7 @@
       left: 0;
 
       & path {
-        &:nth-child(2n + 1) {
+        &:nth-child(2n) {
           animation-duration: 4.5s;
           animation-name: fill-1;
           animation-iteration-count: infinite;
@@ -84,7 +84,7 @@
 }
 
 @keyframes fill-1 {
-  from {
+  0% {
     fill: var(--page-bg-lite);
   }
 
@@ -92,13 +92,13 @@
     fill: var(--page-bg);
   }
 
-  to {
+  100% {
     fill: var(--page-bg-lite);
   }
 }
 
 @keyframes fill-2 {
-  from {
+  0% {
     fill: var(--page-bg);
   }
 
@@ -106,7 +106,7 @@
     fill: var(--page-bg-lite);
   }
 
-  to {
+  100% {
     fill: var(--page-bg);
   }
 }

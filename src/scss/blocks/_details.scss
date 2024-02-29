@@ -236,8 +236,8 @@
         border-left: 1px solid var(--accent);
         background: linear-gradient(
           90deg,
-          rgba(26, 26, 26, 1) 0%,
-          rgba(26, 26, 26, 0) 100%
+          rgb(26 26 26 / 100%) 0%,
+          rgb(26 26 26 / 0%) 100%
         );
 
         &:not(:last-child) {

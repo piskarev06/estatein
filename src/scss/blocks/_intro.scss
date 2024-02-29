@@ -2,8 +2,8 @@
   &--dark {
     background: linear-gradient(
       154deg,
-      rgba(38, 38, 38, 1) 0%,
-      rgba(38, 38, 38, 0) 55%
+      rgb(38 38 38 / 100%) 0%,
+      rgb(38 38 38 / 0%) 55%
     );
 
     border-bottom: var(--border);

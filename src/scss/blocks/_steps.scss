@@ -32,7 +32,7 @@
     height: calc(100% - 66px);
     padding: 50px;
     border: var(--border);
-    border-radius: 0 12px 12px 12px;
+    border-radius: 0 12px 12px;
 
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@
       width: 1px;
       height: 250px;
       z-index: 1;
-      background: linear-gradient(rgba(112, 59, 247, 1), rgba(112, 59, 247, 0));
+      background: linear-gradient(rgb(112 59 247 / 100%), rgb(112 59 247 / 0%));
     }
 
     &::after {
@@ -70,7 +70,7 @@
       width: 1px;
       height: 200px;
       z-index: 1;
-      background: linear-gradient(rgba(112, 59, 247, 1), rgba(112, 59, 247, 0));
+      background: linear-gradient(rgb(112 59 247 / 100%), rgb(112 59 247 / 0%));
     }
 
     & .content {

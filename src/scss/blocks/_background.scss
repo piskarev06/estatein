@@ -33,13 +33,13 @@
 
     & g {
       animation-duration: 80s;
-      animation-name: line-movement--sm;
+      animation-name: line-movement-sm;
     }
   }
 }
 
 @keyframes line-movement {
-  from {
+  0% {
     transform: translateX(20%);
   }
 
@@ -47,13 +47,13 @@
     transform: translateX(40%);
   }
 
-  to {
+  100% {
     transform: translateX(20%);
   }
 }
 
-@keyframes line-movement--sm {
-  from {
+@keyframes line-movement-sm {
+  0% {
     transform: translateX(10%);
   }
 
@@ -61,7 +61,7 @@
     transform: translateX(20%);
   }
 
-  to {
+  100% {
     transform: translateX(10%);
   }
 }

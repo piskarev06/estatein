@@ -58,29 +58,29 @@
 }
 
 @keyframes logo-effect {
-  from {
-    fill: rgba(112, 59, 247, 100%);
+  0% {
+    fill: rgb(112 59 247 / 100%);
   }
 
   50% {
-    fill: rgba(112, 59, 247, 60%);
+    fill: rgb(112 59 247 / 60%);
   }
 
-  to {
-    fill: rgba(112, 59, 247, 100%);
+  100% {
+    fill: rgb(112 59 247 / 100%);
   }
 }
 
 @keyframes text-effect {
-  from {
-    fill: rgba(255, 255, 255, 100%);
+  0% {
+    fill: rgb(255 255 255 / 100%);
   }
 
   50% {
-    fill: rgba(255, 255, 255, 60%);
+    fill: rgb(255 255 255 / 60%);
   }
 
-  to {
-    fill: rgba(255, 255, 247, 100%);
+  100% {
+    fill: rgb(255 255 247 / 100%);
   }
 }
