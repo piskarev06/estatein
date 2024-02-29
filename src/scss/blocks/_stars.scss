@@ -15,6 +15,11 @@
     & img {
       width: 30px;
       height: 30px;
+
+      @media (max-width: 1604px) {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 
@@ -24,6 +29,11 @@
     & img {
       width: 18px;
       height: 18px;
+
+      @media (max-width: 1604px) {
+        width: 14.4px;
+        height: 14.4px;
+      }
     }
   }
 
@@ -31,9 +41,18 @@
     transform: rotate(calc(1deg * var(--rotation)));
     height: 10px;
 
+    @media (max-width: 1604px) {
+      height: 6.72px;
+    }
+
     & img {
       width: 10px;
       height: 10px;
+
+      @media (max-width: 1604px) {
+        width: 6.72px;
+        height: 6.72px;
+      }
     }
   }
 }

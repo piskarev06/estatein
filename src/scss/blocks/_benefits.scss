@@ -2,25 +2,34 @@
   &__list {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
+
+    @media (max-width: 1604px) {
+      gap: 16px;
+    }
   }
 
   &__item {
-    padding: 14px 20px;
+    padding: 16px 24px;
 
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     border: var(--border);
     background: var(--page-bg-lite);
+
+    @media (max-width: 1604px) {
+      padding: 14px 20px;
+    }
   }
 
   &__title {
     color: var(--heading-color);
     font-size: 30px;
     font-weight: 700;
-  }
 
-  &__text {
-    color: var(--text-color);
-    font-size: 16px;
+    margin-bottom: 2px;
+
+    @media (max-width: 1604px) {
+      font-size: 30px;
+    }
   }
 }

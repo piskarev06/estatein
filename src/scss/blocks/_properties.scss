@@ -2,6 +2,10 @@
   &__wrapper {
     max-width: 1200px;
 
+    @media (max-width: 1604px) {
+      max-width: 975px;
+    }
+
     &--properties {
       max-width: 1300px;
     }
@@ -18,13 +22,25 @@
     border-radius: var(--border-radius);
     border: var(--border);
 
+    @media (max-width: 1604px) {
+      padding: 30px;
+    }
+
     & .card {
       &__img {
         margin-bottom: 30px;
+
+        @media (max-width: 1604px) {
+          margin-bottom: 20px;
+        }
       }
 
       &__description {
         margin-bottom: 30px;
+
+        @media (max-width: 1604px) {
+          margin-bottom: 24px;
+        }
       }
 
       &__title {
@@ -43,6 +59,12 @@
         gap: 10px;
 
         margin-bottom: 30px;
+
+        @media (max-width: 1604px) {
+          gap: 6px;
+
+          margin-bottom: 24px;
+        }
       }
 
       &__tag {
@@ -54,6 +76,13 @@
         border-radius: 28px;
         border: var(--border);
         background: var(--page-bg-lite);
+
+        @media (max-width: 1604px) {
+          gap: 4px;
+          padding: 6px 14px;
+
+          font-size: 14px;
+        }
 
         & .tag__name {
           color: var(--heading-color);

@@ -1,8 +1,10 @@
 .faq {
-  padding: 75px 0 100px;
-
   &__wrapper {
     max-width: 1200px;
+
+    @media (max-width: 1604px) {
+      max-width: 1000px;
+    }
   }
 
   &__card {
@@ -15,15 +17,29 @@
     border-radius: var(--border-radius);
     border: var(--border);
 
+    @media (max-width: 1604px) {
+      padding: 40px;
+    }
+
     & .card {
       &__title {
         margin-bottom: 30px;
+
+        @media (max-width: 1604px) {
+          margin-bottom: 24px;
+        }
       }
 
       &__text {
         letter-spacing: -0.108px;
 
         margin-bottom: 30px;
+
+        @media (max-width: 1604px) {
+          letter-spacing: -0.6%;
+
+          margin-bottom: 24px;
+        }
       }
     }
   }

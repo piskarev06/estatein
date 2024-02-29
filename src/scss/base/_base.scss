@@ -15,6 +15,10 @@ body {
 
   background-color: var(--page-bg);
 
+  @media (max-width: 1604px) {
+    font-size: 16px;
+  }
+
   &.noscroll {
     overflow-y: hidden;
   }

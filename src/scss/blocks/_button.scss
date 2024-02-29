@@ -16,6 +16,12 @@
   background-size: 200%;
   transition: all 0.5s ease-out;
 
+  @media (max-width: 1604px) {
+    padding: 14px 20px;
+
+    font-size: 14px;
+  }
+
   &:hover {
     background-position: left;
   }

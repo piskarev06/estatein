@@ -1,16 +1,32 @@
 .section {
   padding: 75px 0;
 
+  @media (max-width: 1604px) {
+    padding: 60px 0;
+  }
+
   &--top {
     padding: 150px 0 75px;
+
+    @media (max-width: 1604px) {
+      padding: 120px 0 60px;
+    }
   }
 
   &--bottom {
     padding: 75px 0 150px;
+
+    @media (max-width: 1604px) {
+      padding: 60px 0 120px;
+    }
   }
 
   &--full {
     padding: 150px 0;
+
+    @media (max-width: 1604px) {
+      padding: 120px 0;
+    }
   }
 
   &__top {
@@ -21,6 +37,10 @@
 
     margin-bottom: 80px;
 
+    @media (max-width: 1604px) {
+      margin-bottom: 60px;
+    }
+
     &--block {
       display: block;
       justify-content: unset;
@@ -30,5 +50,9 @@
 
   &__title {
     margin-bottom: 14px;
+
+    @media (max-width: 1604px) {
+      margin-bottom: 10px;
+    }
   }
 }

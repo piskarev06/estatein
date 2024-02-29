@@ -1,6 +1,10 @@
 .reviews {
   &__wrapper {
     max-width: 1200px;
+
+    @media (max-width: 1604px) {
+      max-width: 960px;
+    }
   }
 
   &__card {
@@ -13,9 +17,17 @@
     border-radius: var(--border-radius);
     border: var(--border);
 
+    @media (max-width: 1604px) {
+      padding: 40px;
+    }
+
     .card {
       &__top {
         margin-bottom: 40px;
+
+        @media (max-width: 1604px) {
+          margin-bottom: 30px;
+        }
       }
 
       &__stars {
@@ -24,10 +36,20 @@
         gap: 10px;
 
         margin-bottom: 40px;
+
+        @media (max-width: 1604px) {
+          gap: 8px;
+
+          margin-bottom: 30px;
+        }
       }
 
       &__title {
         margin-bottom: 14px;
+
+        @media (max-width: 1604px) {
+          margin-bottom: 10px;
+        }
       }
 
       &__text {
@@ -38,6 +60,10 @@
         display: flex;
         align-items: center;
         gap: 12px;
+
+        @media (max-width: 1604px) {
+          gap: 10px;
+        }
       }
 
       &__name {
@@ -45,6 +71,12 @@
         font-size: 20px;
 
         margin-bottom: 2px;
+
+        @media (max-width: 1604px) {
+          font-size: 18px;
+
+          margin-bottom: 0;
+        }
       }
     }
   }

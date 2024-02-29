@@ -5,6 +5,7 @@
     "no-descending-specificity": null,
     "declaration-empty-line-before": null,
     "custom-property-empty-line-before": null,
-    "scss/at-import-partial-extension": null
+    "scss/at-import-partial-extension": null,
+    "media-feature-range-notation": null
   }
 }
