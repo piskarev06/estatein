@@ -2,20 +2,42 @@
   &__top {
     padding: 100px 0;
     background-color: var(--page-bg);
+
+    @media (max-width: 1604px) {
+      padding: 80px 0;
+    }
   }
 
   &__logo {
     margin-bottom: 30px;
+
+    @media (max-width: 1604px) {
+      margin-bottom: 24px;
+    }
+
+    & img {
+      @media (max-width: 1604px) {
+        height: 34px;
+      }
+    }
   }
 
   &__left {
     max-width: 538px;
     width: 100%;
+
+    @media (max-width: 1604px) {
+      max-width: 326px;
+    }
   }
 
   &__form {
     position: relative;
     max-width: 423px;
+
+    @media (max-width: 1604px) {
+      max-width: 305px;
+    }
 
     &::before {
       position: absolute;
@@ -27,6 +49,11 @@
       width: 24px;
       height: 24px;
       display: inline-block;
+
+      @media (max-width: 1604px) {
+        left: 20px;
+        background-size: 20px;
+      }
     }
   }
 
@@ -39,7 +66,13 @@
     border: var(--border);
     background: var(--page-bg);
 
-    transition: all 0.5s ease-out;
+    transition: var(--transition);
+
+    @media (max-width: 1604px) {
+      padding: 14px 50px 14px 46px;
+
+      font-size: 14px;
+    }
 
     &:focus {
       border: 1px solid var(--accent);
@@ -56,6 +89,12 @@
     top: 50%;
     transform: translateY(-50%);
     right: 24px;
+
+    @media (max-width: 1604px) {
+      right: 20px;
+      width: 24px;
+      height: 24px;
+    }
   }
 
   &__right {
@@ -70,6 +109,12 @@
       letter-spacing: -0.12px;
 
       margin-bottom: 30px;
+
+      @media (max-width: 1604px) {
+        font-size: 18px;
+
+        margin-bottom: 24px;
+      }
     }
 
     & .list__item {
@@ -79,6 +124,10 @@
 
       &:not(:last-child) {
         margin-bottom: 20px;
+
+        @media (max-width: 1604px) {
+          margin-bottom: 16px;
+        }
       }
     }
 
@@ -104,6 +153,10 @@
         color: var(--accent);
         overflow: hidden;
         transition: width 275ms ease;
+
+        @media (max-width: 1604px) {
+          top: -2px;
+        }
       }
 
       &:hover::before {
@@ -113,9 +166,13 @@
   }
 
   &__bottom {
-    padding: 16px 0;
+    padding: 26px 0;
 
     background-color: var(--page-bg-lite);
+
+    @media (max-width: 1604px) {
+      padding: 14px 0;
+    }
   }
 
   &__copyright {
@@ -126,6 +183,12 @@
     color: var(--heading-color);
     line-height: 24px;
     letter-spacing: -0.108px;
+
+    @media (max-width: 1604px) {
+      gap: 20px;
+
+      font-size: 14px;
+    }
   }
 
   &__social {
@@ -133,8 +196,14 @@
     align-items: center;
     gap: 10px;
 
-    & li a img svg {
-      opacity: 0;
+    @media (max-width: 1604px) {
+      gap: 8px;
+    }
+
+    & img {
+      @media (max-width: 1604px) {
+        width: 40px;
+      }
     }
   }
 }
