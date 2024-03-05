@@ -40,10 +40,32 @@
 
       padding: 150px 0 160px;
       min-height: unset;
+
+      @media (max-width: 1604px) {
+        padding: 100px 0 130px;
+      }
+    }
+
+    &--services,
+    &--contact {
+      min-height: unset;
+      padding: 150px 0 100px;
+
+      @media (max-width: 1604px) {
+        padding: 100px 0;
+      }
     }
   }
 
   &__left {
+    max-width: 1358px;
+
+    @media (max-width: 1604px) {
+      max-width: 1160px;
+    }
+  }
+
+  &__left--short {
     position: relative;
 
     max-width: 758px;
@@ -102,6 +124,11 @@
     &--properties {
       max-width: 1358px;
 
+      margin-bottom: unset;
+    }
+
+    &--services,
+    &--contact {
       margin-bottom: unset;
     }
   }
