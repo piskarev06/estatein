@@ -7,10 +7,10 @@
     right: 0;
     text-align: center;
 
-    animation: 5.5s linear 0s normal none infinite running rotationCircle;
+    animation: 5.5s linear 0s normal none infinite running rotation-circle;
 
     &--sm {
-      animation: 4s linear 0s normal none infinite running rotationCircle;
+      animation: 4s linear 0s normal none infinite running rotation-circle;
     }
   }
 }

@@ -2,7 +2,7 @@ import {
   setCountOfSlides,
   addArrowListener,
   decrementCount,
-  incrementCount,
+  incrementCount
 } from './counterHelpers';
 
 export const clientsSlider = () => {
@@ -15,8 +15,19 @@ export const clientsSlider = () => {
     simulateTouch: false,
     navigation: {
       nextEl: '.clients-button-next',
-      prevEl: '.clients-button-prev',
+      prevEl: '.clients-button-prev'
     },
+    breakpoints: {
+      391: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+
+      1605: {
+        slidesPerView: 2,
+        spaceBetween: 50
+      }
+    }
   });
 
   setCountOfSlides('clients__card', 'clients__count');

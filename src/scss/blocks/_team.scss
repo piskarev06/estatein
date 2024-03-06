@@ -1,12 +1,12 @@
 .team {
-  &__top {
-    margin-bottom: 80px;
-  }
-
   &__list {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     gap: 30px;
+
+    @media (max-width: 1604px) {
+      gap: 20px;
+    }
   }
 
   &__item {
@@ -15,6 +15,10 @@
 
     border-radius: var(--border-radius);
     border: var(--border);
+
+    @media (max-width: 1604px) {
+      padding: 24px;
+    }
 
     &:hover {
       & .item__redirection {
@@ -29,17 +33,37 @@
         margin-bottom: 50px;
       }
 
+      &__img img {
+        @media (max-width: 1604px) {
+          border-radius: 10px;
+          max-height: 220px;
+        }
+      }
+
       &__socialIcon {
         position: absolute;
         left: 50%;
         top: 100%;
         transform: translate(-50%, -50%);
+
+        & img {
+          @media (max-width: 1604px) {
+            width: 60px;
+            height: 40px;
+          }
+        }
       }
 
       &__title {
         line-height: 120%;
 
         margin-bottom: 6px;
+
+        @media (max-width: 1604px) {
+          line-height: 28px;
+
+          margin-bottom: 4px;
+        }
       }
 
       &__post {
@@ -48,6 +72,12 @@
         line-height: 120%;
 
         margin-bottom: 24px;
+
+        @media (max-width: 1604px) {
+          line-height: 24px;
+
+          margin-bottom: 20px;
+        }
       }
 
       &__redirection {
@@ -61,6 +91,10 @@
         border-radius: 100px;
         border: var(--border);
         transition: var(--transition);
+
+        @media (max-width: 1604px) {
+          padding: 14px 20px;
+        }
       }
 
       &__link {
@@ -73,6 +107,12 @@
         width: 44px;
         height: 44px;
         display: inline-block;
+
+        @media (max-width: 1604px) {
+          right: 10px;
+          width: 36px;
+          height: 36px;
+        }
 
         & svg rect {
           transition: var(--transition);

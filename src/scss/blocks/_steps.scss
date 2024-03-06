@@ -1,30 +1,38 @@
 .steps {
-  &__top {
-    max-width: 1300px;
-  }
-
   &__list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 50px 30px;
+
+    @media (max-width: 1604px) {
+      gap: 40px 30px;
+    }
   }
 
   &__item {
     min-width: 500px;
     flex: 1;
     align-self: stretch;
+
+    @media (max-width: 1604px) {
+      flex: 31.91%;
+      min-width: unset;
+    }
   }
 
   &__marker {
     display: inline-block;
-    padding: 16px 0 20px 16px;
+    padding: 16px 0 16px 20px;
 
     color: var(--heading-color);
     font-size: 20px;
 
     border-left: var(--border);
+
+    @media (max-width: 1604px) {
+      padding: 14px 0 14px 16px;
+    }
   }
 
   &__content {
@@ -49,6 +57,14 @@
       var(--accent),
       transparent calc(69.5% + 1px)
     );
+
+    @media (max-width: 1604px) {
+      padding: 40px;
+
+      background-size: 225px 225px;
+      background-position: calc(var(--mouse-x) - 112.5px)
+        calc(var(--mouse-y) - 112.5px);
+    }
 
     &::before {
       position: absolute;
@@ -80,6 +96,12 @@
         font-size: 26px;
 
         margin-bottom: 20px;
+
+        @media (max-width: 1604px) {
+          font-size: 20px;
+
+          margin-bottom: 16px;
+        }
       }
     }
   }
