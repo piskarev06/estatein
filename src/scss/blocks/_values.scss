@@ -113,8 +113,10 @@
     }
 
     &:nth-child(2) {
-      border-bottom: var(--border);
-      padding-bottom: 20px;
+      @media (max-width: 767px) {
+        border-bottom: var(--border);
+        padding-bottom: 20px;
+      }
     }
 
     &--last {

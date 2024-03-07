@@ -7,6 +7,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 767px) {
+      padding: 20px;
+
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
   }
 
   &--footer__top {
@@ -21,6 +28,10 @@
     @media (max-width: 1000px) {
       flex-direction: column;
       max-width: 807px;
+    }
+
+    @media (max-width: 767px) {
+      gap: 50px;
     }
   }
 }

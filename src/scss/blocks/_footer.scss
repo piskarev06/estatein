@@ -6,6 +6,10 @@
     @media (max-width: 1604px) {
       padding: 80px 0;
     }
+
+    @media (max-width: 767px) {
+      padding: 50px 0;
+    }
   }
 
   &__logo {
@@ -13,6 +17,10 @@
 
     @media (max-width: 1604px) {
       margin-bottom: 24px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
     }
 
     & img {
@@ -29,6 +37,10 @@
     @media (max-width: 1604px) {
       max-width: 326px;
     }
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
   }
 
   &__form {
@@ -37,6 +49,10 @@
 
     @media (max-width: 1604px) {
       max-width: 305px;
+    }
+
+    @media (max-width: 767px) {
+      max-width: 100%;
     }
 
     &::before {
@@ -74,6 +90,10 @@
       font-size: 14px;
     }
 
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
+
     &:focus {
       border: 1px solid var(--accent);
     }
@@ -103,6 +123,11 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
     & .item__title {
       font-size: 20px;
       line-height: 24px;
@@ -114,6 +139,12 @@
         font-size: 18px;
 
         margin-bottom: 24px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 16px;
+
+        margin-bottom: 16px;
       }
     }
 
@@ -127,6 +158,10 @@
 
         @media (max-width: 1604px) {
           margin-bottom: 16px;
+        }
+
+        @media (max-width: 767px) {
+          margin-bottom: 8px;
         }
       }
     }
@@ -157,10 +192,45 @@
         @media (max-width: 1604px) {
           top: -2px;
         }
+
+        @media (max-width: 767px) {
+          top: -4px;
+        }
       }
 
       &:hover::before {
         width: 100%;
+      }
+    }
+  }
+
+  &__item {
+    @media (max-width: 767px) {
+      position: relative;
+      width: calc(50% - 10px);
+
+      padding-bottom: 20px;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+
+        content: '';
+        background: var(--grey-15);
+        width: calc(100% - 20px);
+        height: 1px;
+        display: inline-block;
+      }
+
+      &:nth-child(odd) {
+        padding-right: 20px;
+        border-right: var(--border);
+
+        left: 0;
+      }
+
+      &:nth-child(even) {
+        right: 0;
       }
     }
   }
@@ -189,6 +259,11 @@
 
       font-size: 14px;
     }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__social {
@@ -203,6 +278,10 @@
     & img {
       @media (max-width: 1604px) {
         width: 40px;
+      }
+
+      @media (max-width: 767px) {
+        width: 60px;
       }
     }
   }
