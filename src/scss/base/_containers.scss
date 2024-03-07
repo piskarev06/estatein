@@ -17,5 +17,10 @@
     @media (max-width: 1604px) {
       gap: 80px;
     }
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      max-width: 807px;
+    }
   }
 }

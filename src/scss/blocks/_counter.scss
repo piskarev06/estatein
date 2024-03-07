@@ -13,11 +13,34 @@
     padding-top: 16px;
   }
 
+  @media (max-width: 767px) {
+    margin-top: 24px;
+    padding-top: 0;
+    border-top: unset;
+  }
+
+  &__currentCount--mobile {
+    display: none;
+    visibility: hidden;
+
+    @media (max-width: 767px) {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      visibility: unset;
+    }
+  }
+
   &__block {
     font-size: 20px;
 
     @media (max-width: 1604px) {
       font-size: 16px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 14px;
     }
 
     & strong {
@@ -29,6 +52,22 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @media (max-width: 767px) {
+      display: none;
+      visibility: hidden;
+    }
+
+    &--mobile {
+      display: none;
+      visibility: hidden;
+
+      @media (max-width: 767px) {
+        display: unset;
+        visibility: unset;
+        max-height: 44px;
+      }
+    }
   }
 
   &__arrow {
@@ -39,6 +78,11 @@
     cursor: pointer;
 
     @media (max-width: 1604px) {
+      max-height: 44px;
+    }
+
+    @media (max-width: 767px) {
+      max-width: 44px;
       max-height: 44px;
     }
   }

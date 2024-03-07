@@ -8,8 +8,8 @@ import {
 export const clientsSlider = () => {
   const clientsSlider = new Swiper('.clients__slider', {
     direction: 'horizontal',
-    slidesPerView: 2,
-    spaceBetween: 50,
+    slidesPerView: 1,
+    spaceBetween: 30,
     watchSlidesProgress: true,
     loop: false,
     simulateTouch: false,
@@ -19,10 +19,13 @@ export const clientsSlider = () => {
     },
     breakpoints: {
       391: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      1251: {
         slidesPerView: 2,
         spaceBetween: 40
       },
-
       1605: {
         slidesPerView: 2,
         spaceBetween: 50

@@ -9,8 +9,28 @@
 
     animation: 5.5s linear 0s normal none infinite running rotation-circle;
 
+    @media (max-width: 1604px) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: 767px) {
+      width: 48px;
+      height: 48px;
+    }
+
     &--sm {
       animation: 4s linear 0s normal none infinite running rotation-circle;
+
+      @media (max-width: 1604px) {
+        width: 44px;
+        height: 44px;
+      }
+
+      @media (max-width: 767px) {
+        width: 36px;
+        height: 36px;
+      }
     }
   }
 }

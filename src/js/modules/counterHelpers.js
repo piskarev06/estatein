@@ -7,10 +7,13 @@ export const incrementCount = (counterId) => {
     +document.getElementById(counterId).innerText + 1;
 };
 
-export const addArrowListener = (arrowId, counterId, countAction) => {
-  document
-    .getElementById(arrowId)
-    .addEventListener('click', () => countAction(counterId));
+export const addArrowListener = (arrowClass, counterId, countAction) => {
+  Array.prototype.forEach.call(
+    document.getElementsByClassName(arrowClass),
+    (el) => {
+      el.addEventListener('click', () => countAction(counterId));
+    }
+  );
 };
 
 export const setCountOfSlides = (slidesClassName, counterClassName) => {
