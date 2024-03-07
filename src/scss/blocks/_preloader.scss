@@ -25,6 +25,15 @@
 
   & svg {
     width: 240px;
+
+    @media (max-width: 1604px) {
+      width: 170px;
+    }
+
+    @media (max-width: 767px) {
+      gap: 20px;
+      justify-content: space-between;
+    }
   }
 
   &__block {
@@ -35,6 +44,14 @@
     opacity: 1;
 
     transition: all 1s ease-in-out;
+
+    @media (max-width: 1604px) {
+      gap: 10px;
+    }
+
+    @media (max-width: 767px) {
+      gap: 8px;
+    }
   }
 
   &__text {
