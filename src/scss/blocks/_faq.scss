@@ -1,4 +1,13 @@
 .faq {
+  &__inner {
+    @media (max-width: 1250px) {
+      max-width: 807px;
+      width: 100%;
+
+      margin: 0 auto;
+    }
+  }
+
   &__wrapper {
     max-width: 1200px;
 
@@ -21,12 +30,20 @@
       padding: 40px;
     }
 
+    @media (max-width: 767px) {
+      padding: 30px;
+    }
+
     & .card {
       &__title {
         margin-bottom: 30px;
 
         @media (max-width: 1604px) {
           margin-bottom: 24px;
+        }
+
+        @media (max-width: 767px) {
+          margin-bottom: 20px;
         }
       }
 
@@ -39,6 +56,17 @@
           letter-spacing: -0.6%;
 
           margin-bottom: 24px;
+        }
+
+        @media (max-width: 767px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      &__button {
+        @media (max-width: 767px) {
+          width: 100%;
+          text-align: center;
         }
       }
     }

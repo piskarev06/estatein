@@ -8,7 +8,7 @@ import {
 export const reviewsSlider = () => {
   const reviewsSlider = new Swiper('.reviews__slider', {
     direction: 'horizontal',
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     watchSlidesProgress: true,
     loop: false,
@@ -18,13 +18,15 @@ export const reviewsSlider = () => {
       prevEl: '.reviews-button-prev'
     },
     breakpoints: {
-      391: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1251: {
         slidesPerView: 3,
         spaceBetween: 20
       },
-
-      1605: {
-        slidesPerView: 3,
+      1604: {
         spaceBetween: 30
       }
     }

@@ -59,6 +59,8 @@
 
     @media (max-width: 1250px) {
       margin-bottom: 40px;
+      flex-direction: column;
+      gap: 20px;
     }
 
     &--block {
@@ -69,6 +71,13 @@
 
       @media (max-width: 1604px) {
         max-width: 1030px;
+      }
+    }
+
+    & a.button {
+      @media (max-width: 1250px) {
+        width: 100%;
+        text-align: center;
       }
     }
   }

@@ -18,10 +18,6 @@ export const clientsSlider = () => {
       prevEl: '.clients-button-prev'
     },
     breakpoints: {
-      391: {
-        slidesPerView: 1,
-        spaceBetween: 30
-      },
       1251: {
         slidesPerView: 2,
         spaceBetween: 40

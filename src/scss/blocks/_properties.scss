@@ -1,4 +1,13 @@
 .properties {
+  &__inner {
+    @media (max-width: 1250px) {
+      max-width: 807px;
+      width: 100%;
+
+      margin: 0 auto;
+    }
+  }
+
   &__wrapper {
     max-width: 1200px;
 
@@ -26,12 +35,40 @@
       padding: 30px;
     }
 
+    @media (max-width: 767px) {
+      padding: 24px;
+    }
+
     & .card {
       &__img {
         margin-bottom: 30px;
 
         @media (max-width: 1604px) {
           margin-bottom: 20px;
+        }
+
+        @media (max-width: 1250px) {
+          text-align: center;
+        }
+
+        @media (max-width: 767px) {
+          margin-bottom: 16px;
+        }
+
+        & img {
+          @media (max-width: 1325px) {
+            width: 100%;
+          }
+
+          @media (max-width: 1250px) {
+            height: 435px;
+            width: unset;
+          }
+
+          @media (max-width: 767px) {
+            width: 100%;
+            height: auto;
+          }
         }
       }
 
@@ -45,6 +82,14 @@
 
       &__title {
         margin-bottom: 6px;
+
+        @media (max-width: 1604px) {
+          margin-bottom: 4px;
+        }
+
+        @media (max-width: 767px) {
+          margin-bottom: 2px;
+        }
       }
 
       &__link {
@@ -64,6 +109,10 @@
           gap: 6px;
 
           margin-bottom: 24px;
+        }
+
+        @media (max-width: 767px) {
+          flex-wrap: wrap;
         }
       }
 

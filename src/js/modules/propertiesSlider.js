@@ -8,7 +8,7 @@ import {
 export const propertiesSlider = () => {
   const propertiesSlider = new Swiper('.properties__slider', {
     direction: 'horizontal',
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     watchSlidesProgress: true,
     loop: false,
@@ -18,13 +18,15 @@ export const propertiesSlider = () => {
       prevEl: '.properties-button-prev'
     },
     breakpoints: {
-      391: {
+      1251: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1326: {
         slidesPerView: 3,
         spaceBetween: 20
       },
-
       1605: {
-        slidesPerView: 3,
         spaceBetween: 30
       }
     }

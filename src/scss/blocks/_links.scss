@@ -6,10 +6,18 @@
   background: var(--page-bg);
   box-shadow: var(--box-shadow);
 
+  @media (max-width: 1604px) {
+    padding: 10px;
+  }
+
   &__list {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: 1604px) {
+      gap: 10px;
+    }
   }
 
   &__item {
@@ -22,11 +30,20 @@
     background: var(--page-bg-lite);
     transition: var(--transition);
 
+    @media (max-width: 1604px) {
+      padding: 48px 16px 30px;
+    }
+
     &:hover {
       border: 1px solid var(--accent);
 
       & .links__arrow svg path {
         stroke: var(--heading-color);
+
+        @media (max-width: 1604px) {
+          width: 16.25px;
+          height: 16.25px;
+        }
       }
 
       & .links__arrow svg circle {
@@ -55,6 +72,10 @@
     flex-direction: column;
     align-items: center;
     gap: 44px;
+
+    @media (max-width: 1604px) {
+      gap: 34px;
+    }
   }
 
   &__img {
@@ -87,6 +108,10 @@
     text-align: center;
     font-size: 20px;
     font-weight: 600;
+
+    @media (max-width: 1604px) {
+      font-size: 16px;
+    }
   }
 }
 

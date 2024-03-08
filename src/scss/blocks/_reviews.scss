@@ -1,4 +1,13 @@
 .reviews {
+  &__inner {
+    @media (max-width: 1250px) {
+      max-width: 807px;
+      width: 100%;
+
+      margin: 0 auto;
+    }
+  }
+
   &__wrapper {
     max-width: 1200px;
 
@@ -21,12 +30,20 @@
       padding: 40px;
     }
 
+    @media (max-width: 767px) {
+      padding: 30px;
+    }
+
     .card {
       &__top {
         margin-bottom: 40px;
 
         @media (max-width: 1604px) {
           margin-bottom: 30px;
+        }
+
+        @media (max-width: 767px) {
+          margin-bottom: 24px;
         }
       }
 
@@ -42,6 +59,22 @@
 
           margin-bottom: 30px;
         }
+
+        @media (max-width: 767px) {
+          margin-bottom: 24px;
+        }
+      }
+
+      &__star {
+        @media (max-width: 1604px) {
+          width: 38px;
+          height: 38px;
+        }
+
+        @media (max-width: 767px) {
+          width: 30px;
+          height: 30px;
+        }
       }
 
       &__title {
@@ -49,6 +82,10 @@
 
         @media (max-width: 1604px) {
           margin-bottom: 10px;
+        }
+
+        @media (max-width: 767px) {
+          margin-bottom: 6px;
         }
       }
 
@@ -66,6 +103,13 @@
         }
       }
 
+      &__img {
+        @media (max-width: 1604px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
       &__name {
         color: var(--heading-color);
         font-size: 20px;
@@ -76,6 +120,10 @@
           font-size: 18px;
 
           margin-bottom: 0;
+        }
+
+        @media (max-width: 767px) {
+          font-size: 16px;
         }
       }
     }
