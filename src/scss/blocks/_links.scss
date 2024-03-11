@@ -18,12 +18,21 @@
     @media (max-width: 1604px) {
       gap: 10px;
     }
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
     position: relative;
     padding: 64px 20px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1;
+    align-self: stretch;
 
     border-radius: var(--border-radius);
     border: var(--border);
@@ -34,23 +43,38 @@
       padding: 48px 16px 30px;
     }
 
+    @media (max-width: 767px) {
+      padding: 34px 14px 20px;
+
+      flex: calc(50% - 10px);
+    }
+
+    & .links__arrow svg {
+      @media (max-width: 1604px) {
+        width: 36.705px;
+        height: 36.705px;
+      }
+    }
+
+    & .links__arrow svg path {
+      @media (max-width: 1604px) {
+        width: 16.25px;
+        height: 16.25px;
+      }
+    }
+
     &:hover {
       border: 1px solid var(--accent);
 
       & .links__arrow svg path {
         stroke: var(--heading-color);
-
-        @media (max-width: 1604px) {
-          width: 16.25px;
-          height: 16.25px;
-        }
       }
 
       & .links__arrow svg circle {
         fill: var(--accent);
       }
 
-      & .links__circle {
+      & .circles__item {
         animation-play-state: paused;
       }
     }
@@ -76,6 +100,10 @@
     @media (max-width: 1604px) {
       gap: 34px;
     }
+
+    @media (max-width: 767px) {
+      gap: 28px;
+    }
   }
 
   &__img {
@@ -86,20 +114,23 @@
 
     max-width: 82px;
     width: 100%;
-  }
 
-  &__circle {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+    @media (max-width: 1604px) {
+      max-width: 60px;
+    }
 
-    animation: 5.5s linear 0s normal none infinite running rotation-circle;
+    @media (max-width: 767px) {
+      max-width: 48px;
+    }
 
-    &--sm {
-      animation: 4s linear 0s normal none infinite running rotation-circle;
+    & img {
+      @media (max-width: 1604px) {
+        height: 24px;
+      }
+
+      @media (max-width: 767px) {
+        height: 20px;
+      }
     }
   }
 
@@ -112,15 +143,9 @@
     @media (max-width: 1604px) {
       font-size: 16px;
     }
-  }
-}
 
-@keyframes rotation-circle {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 }
