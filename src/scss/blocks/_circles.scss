@@ -1,4 +1,36 @@
 .circles {
+  &__img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 82px;
+    width: 82px;
+
+    @media (max-width: 1604px) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: 767px) {
+      width: 48px;
+      height: 48px;
+    }
+
+    & img {
+      height: 34px;
+
+      @media (max-width: 1604px) {
+        height: 24px;
+      }
+
+      @media (max-width: 767px) {
+        height: 20px;
+      }
+    }
+  }
+
   &__item {
     position: absolute;
     margin-left: auto;

@@ -1,4 +1,13 @@
 .property {
+  &__inner {
+    @media (max-width: 1250px) {
+      max-width: 807px;
+      width: 100%;
+
+      margin: 0 auto;
+    }
+  }
+
   &__top {
     max-width: 1300px;
   }
@@ -7,6 +16,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+    @media (max-width: 1604px) {
+      gap: 20px;
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -16,12 +33,34 @@
     border-radius: var(--border-radius);
     border: var(--border);
 
+    @media (max-width: 1604px) {
+      padding: 40px;
+    }
+
+    @media (max-width: 1250px) {
+      flex-basis: calc(50% - 10px);
+    }
+
+    @media (max-width: 767px) {
+      padding: 24px;
+      flex-basis: 100%;
+    }
+
     &--big {
       padding: 59.5px 50px;
       flex-basis: 66%;
 
       border-radius: var(--border-radius);
       border: var(--border);
+
+      @media (max-width: 1604px) {
+        padding: 57.5px 40px;
+      }
+
+      @media (max-width: 1250px) {
+        padding: 24px;
+        flex-basis: 100%;
+      }
 
       & .item {
         &__top {
@@ -30,12 +69,33 @@
           justify-content: space-between;
 
           margin-bottom: 30px;
+
+          @media (max-width: 1604px) {
+            margin-bottom: 20px;
+          }
+
+          @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+          }
         }
 
         &__title {
           color: var(--heading-color);
           font-weight: 700;
           font-size: 30px;
+
+          @media (max-width: 1604px) {
+            font-size: 20px;
+          }
+        }
+
+        &__button {
+          @media (max-width: 767px) {
+            width: 100%;
+            text-align: center;
+          }
         }
       }
     }
@@ -47,16 +107,18 @@
         gap: 20px;
 
         margin-bottom: 30px;
-      }
 
-      &__img {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @media (max-width: 1604px) {
+          gap: 16px;
 
-        height: 74px;
-        width: 74px;
+          margin-bottom: 20px;
+        }
+
+        @media (max-width: 767px) {
+          gap: 10px;
+
+          margin-bottom: 16px;
+        }
       }
     }
   }
