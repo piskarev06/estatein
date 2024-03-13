@@ -10,6 +10,10 @@
   border-radius: var(--border-radius);
   background: var(--page-bg-lite);
 
+  @media (max-width: 1604px) {
+    max-width: 413px;
+  }
+
   &__item {
     padding: 18px 28.83px;
     flex: 1;
@@ -19,12 +23,21 @@
     color: var(--heading-color);
 
     font-weight: 500;
-    font-size: 18px;
     line-height: 150%;
 
     border-radius: 10px;
     border: var(--border);
     transition: var(--transition);
+
+    @media (max-width: 1604px) {
+      padding: 14px 23.17px;
+
+      border-radius: 8px;
+    }
+
+    @media (max-width: 1250px) {
+      padding: 14px 13.83px;
+    }
 
     &.active {
       background: var(--page-bg);

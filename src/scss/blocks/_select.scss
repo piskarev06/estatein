@@ -39,6 +39,10 @@
       background: var(--page-bg-lite);
       border-radius: var(--border-radius);
       border: var(--border);
+
+      @media (max-width: 1604px) {
+        padding: 16px 20px;
+      }
     }
   }
 
@@ -52,9 +56,17 @@
     transition: var(--transition);
 
     &--form {
+      width: 24px;
+      height: 24px;
       top: unset;
-      transform: unset;
       bottom: 22px;
+      transform: unset;
+
+      @media (max-width: 1604px) {
+        width: 20px;
+        height: 20px;
+        bottom: 16px;
+      }
     }
   }
 }

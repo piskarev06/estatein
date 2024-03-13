@@ -11,6 +11,10 @@
   border: var(--border);
   transition: var(--transition);
 
+  @media (max-width: 1604px) {
+    padding: 16px 20px;
+  }
+
   &::placeholder {
     color: var(--grey-40);
   }

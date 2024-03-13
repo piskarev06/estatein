@@ -12,6 +12,16 @@
   resize: none;
   transition: var(--transition);
 
+  @media (max-width: 1604px) {
+    padding: 16px 20px;
+
+    height: 122px;
+  }
+
+  @media (max-width: 767px) {
+    height: 90px;
+  }
+
   &::placeholder {
     color: var(--grey-40);
   }

@@ -10,6 +10,14 @@
     pointer-events: none;
     gap: 5px;
 
+    @media (max-width: 1604px) {
+      gap: 4px;
+    }
+
+    @media (max-width: 767px) {
+      gap: 3px;
+    }
+
     &::before {
       pointer-events: all;
       content: '';
@@ -25,6 +33,13 @@
       background: var(--page-bg-lite);
       background-position: center;
       transition: var(--transition-sm);
+
+      @media (max-width: 1604px) {
+        width: 24px;
+        height: 24px;
+
+        margin-right: 6px;
+      }
     }
   }
 
