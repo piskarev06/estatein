@@ -27,6 +27,7 @@ export const propertiesSlider = () => {
         spaceBetween: 20
       },
       1605: {
+        slidesPerView: 3,
         spaceBetween: 30
       }
     }
