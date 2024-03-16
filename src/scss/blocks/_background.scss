@@ -31,9 +31,17 @@
 
     scale: 30;
 
+    @media (max-width: 767px) {
+      scale: 10;
+    }
+
     & g {
       animation-duration: 80s;
       animation-name: line-movement-sm;
+
+      @media (max-width: 767px) {
+        animation-duration: 65s;
+      }
     }
   }
 }

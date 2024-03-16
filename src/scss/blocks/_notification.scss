@@ -6,6 +6,18 @@
     padding: 18px 0;
 
     color: var(--heading-color);
+
+    @media (max-width: 1604px) {
+      padding: 14px 0;
+
+      font-size: 14px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 20px 0;
+
+      font-size: 12px;
+    }
   }
 
   &__text {
@@ -13,6 +25,14 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+
+    @media (max-width: 1604px) {
+      gap: 6px;
+    }
+
+    @media (max-width: 767px) {
+      justify-content: flex-start;
+    }
   }
 
   &__link {
@@ -24,5 +44,10 @@
     top: 50%;
     transform: translateY(-50%);
     right: 0;
+
+    @media (max-width: 1604px) {
+      width: 26px;
+      height: 26px;
+    }
   }
 }
